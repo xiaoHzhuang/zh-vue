@@ -1,0 +1,105 @@
+2020-07-03 09:31:49.455 [http-nio-8085-exec-1] WARN  com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-07-03 12:34:42.952 [lettuce-nioEventLoop-4-2] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: Reconnection attempt exceeded timeout of 60 SECONDS 
+2020-07-03 12:34:43.604 [lettuce-nioEventLoop-4-3] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: No route to host: no further information: /192.168.30.10:6379
+io.netty.channel.AbstractChannel$AnnotatedNoRouteToHostException: No route to host: no further information: /192.168.30.10:6379
+Caused by: java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:702)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2020-07-03 12:34:45.809 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m24s930ms798µs903ns).
+2020-07-03 12:35:05.280 [lettuce-nioEventLoop-4-1] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:35:15.374 [lettuce-nioEventLoop-4-2] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:35:25.474 [lettuce-nioEventLoop-4-3] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:35:35.561 [lettuce-nioEventLoop-4-4] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:35:45.760 [lettuce-nioEventLoop-4-1] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:35:56.062 [lettuce-nioEventLoop-4-2] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:36:06.662 [lettuce-nioEventLoop-4-3] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:36:17.760 [lettuce-nioEventLoop-4-4] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:36:29.861 [lettuce-nioEventLoop-4-1] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:36:44.061 [lettuce-nioEventLoop-4-2] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:37:02.261 [lettuce-nioEventLoop-4-3] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:37:28.661 [lettuce-nioEventLoop-4-4] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:38:08.761 [lettuce-nioEventLoop-4-1] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:38:48.863 [lettuce-nioEventLoop-4-2] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:39:28.962 [lettuce-nioEventLoop-4-3] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:40:09.062 [lettuce-nioEventLoop-4-4] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:40:49.138 [lettuce-nioEventLoop-4-1] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:41:29.200 [lettuce-nioEventLoop-4-2] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:42:09.258 [lettuce-nioEventLoop-4-3] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:42:49.316 [lettuce-nioEventLoop-4-4] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:43:29.377 [lettuce-nioEventLoop-4-1] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:44:09.438 [lettuce-nioEventLoop-4-2] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:44:49.496 [lettuce-nioEventLoop-4-3] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:45:29.557 [lettuce-nioEventLoop-4-4] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:46:09.657 [lettuce-nioEventLoop-4-1] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:46:49.758 [lettuce-nioEventLoop-4-2] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:47:29.858 [lettuce-nioEventLoop-4-3] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:48:09.958 [lettuce-nioEventLoop-4-4] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:48:50.058 [lettuce-nioEventLoop-4-1] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:49:30.156 [lettuce-nioEventLoop-4-2] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:50:10.258 [lettuce-nioEventLoop-4-3] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:50:50.359 [lettuce-nioEventLoop-4-4] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:51:30.458 [lettuce-nioEventLoop-4-1] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:52:10.555 [lettuce-nioEventLoop-4-2] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:52:50.657 [lettuce-nioEventLoop-4-3] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:53:30.757 [lettuce-nioEventLoop-4-4] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:54:10.854 [lettuce-nioEventLoop-4-1] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:54:50.956 [lettuce-nioEventLoop-4-2] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:55:31.055 [lettuce-nioEventLoop-4-3] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:56:11.154 [lettuce-nioEventLoop-4-4] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:56:51.252 [lettuce-nioEventLoop-4-1] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:57:31.352 [lettuce-nioEventLoop-4-2] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:58:11.451 [lettuce-nioEventLoop-4-3] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:58:51.553 [lettuce-nioEventLoop-4-4] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 12:59:31.652 [lettuce-nioEventLoop-4-1] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:00:11.751 [lettuce-nioEventLoop-4-2] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:00:51.851 [lettuce-nioEventLoop-4-3] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:01:31.959 [lettuce-nioEventLoop-4-4] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:02:12.051 [lettuce-nioEventLoop-4-1] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:02:52.151 [lettuce-nioEventLoop-4-2] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:03:32.252 [lettuce-nioEventLoop-4-3] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:04:12.353 [lettuce-nioEventLoop-4-4] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:04:52.488 [lettuce-nioEventLoop-4-1] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:05:32.554 [lettuce-nioEventLoop-4-2] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:06:12.651 [lettuce-nioEventLoop-4-3] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:06:52.752 [lettuce-nioEventLoop-4-4] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:07:32.851 [lettuce-nioEventLoop-4-1] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:08:12.950 [lettuce-nioEventLoop-4-2] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:08:53.050 [lettuce-nioEventLoop-4-3] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:09:33.152 [lettuce-nioEventLoop-4-4] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:10:13.254 [lettuce-nioEventLoop-4-1] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:10:53.352 [lettuce-nioEventLoop-4-2] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:11:33.450 [lettuce-nioEventLoop-4-3] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:12:13.550 [lettuce-nioEventLoop-4-4] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:12:53.651 [lettuce-nioEventLoop-4-1] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:13:33.750 [lettuce-nioEventLoop-4-2] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:14:13.851 [lettuce-nioEventLoop-4-3] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:14:53.959 [lettuce-nioEventLoop-4-4] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:15:34.049 [lettuce-nioEventLoop-4-1] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:16:14.155 [lettuce-nioEventLoop-4-2] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:16:54.257 [lettuce-nioEventLoop-4-3] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:17:34.352 [lettuce-nioEventLoop-4-4] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:18:14.451 [lettuce-nioEventLoop-4-1] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:18:54.551 [lettuce-nioEventLoop-4-2] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:19:34.650 [lettuce-nioEventLoop-4-3] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:20:14.752 [lettuce-nioEventLoop-4-4] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:20:54.851 [lettuce-nioEventLoop-4-1] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:21:34.951 [lettuce-nioEventLoop-4-2] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:22:15.052 [lettuce-nioEventLoop-4-3] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:22:20.161 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2020-07-03 13:22:20.222 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8085 is already in use
+2020-07-03 13:22:55.151 [lettuce-nioEventLoop-4-4] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:23:35.251 [lettuce-nioEventLoop-4-1] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [192.168.30.10:6379]: connection timed out: /192.168.30.10:6379
+2020-07-03 13:24:30.554 [http-nio-8085-exec-1] WARN  com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-07-03 13:25:59.705 [http-nio-8085-exec-1] WARN  com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-07-03 13:28:09.626 [http-nio-8085-exec-8] WARN  com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-07-03 15:30:35.568 [http-nio-8085-exec-1] WARN  com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
