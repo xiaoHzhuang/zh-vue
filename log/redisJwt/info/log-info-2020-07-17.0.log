@@ -1,0 +1,96 @@
+2020-07-17 16:10:35.275 [restartedMain] INFO  com.inspur.VueAppApplication - Starting VueAppApplication on zhuanghuan00 with PID 63248 (E:\IDEA_PROJECT\zh-vue\vue-app\target\classes started by zhuanghuan in E:\IDEA_PROJECT\zh-vue)
+2020-07-17 16:10:35.294 [restartedMain] INFO  com.inspur.VueAppApplication - No active profile set, falling back to default profiles: default
+2020-07-17 16:10:35.850 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-17 16:10:35.852 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-17 16:10:39.411 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-17 16:10:39.434 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-07-17 16:10:39.618 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 91ms. Found 0 Redis repository interfaces.
+2020-07-17 16:10:41.440 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2020-07-17 16:10:41.460 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2020-07-17 16:10:41.461 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-07-17 16:10:41.462 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-17 16:10:41.672 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring embedded WebApplicationContext
+2020-07-17 16:10:41.674 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5820 ms
+2020-07-17 16:10:44.374 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-07-17 16:10:44.398 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-07-17 16:12:35.319 [restartedMain] INFO  com.inspur.VueAppApplication - Starting VueAppApplication on zhuanghuan00 with PID 61996 (E:\IDEA_PROJECT\zh-vue\vue-app\target\classes started by zhuanghuan in E:\IDEA_PROJECT\zh-vue)
+2020-07-17 16:12:35.326 [restartedMain] INFO  com.inspur.VueAppApplication - No active profile set, falling back to default profiles: default
+2020-07-17 16:12:35.850 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-17 16:12:35.851 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-17 16:12:37.681 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-17 16:12:37.685 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-07-17 16:12:37.769 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 56ms. Found 0 Redis repository interfaces.
+2020-07-17 16:12:39.040 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2020-07-17 16:12:39.055 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2020-07-17 16:12:39.056 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-07-17 16:12:39.056 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-17 16:12:39.333 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring embedded WebApplicationContext
+2020-07-17 16:12:39.334 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3482 ms
+2020-07-17 16:12:41.395 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-07-17 16:12:41.422 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-07-17 16:14:37.405 [restartedMain] INFO  com.inspur.VueAppApplication - Starting VueAppApplication on zhuanghuan00 with PID 25660 (E:\IDEA_PROJECT\zh-vue\vue-app\target\classes started by zhuanghuan in E:\IDEA_PROJECT\zh-vue)
+2020-07-17 16:14:37.417 [restartedMain] INFO  com.inspur.VueAppApplication - No active profile set, falling back to default profiles: default
+2020-07-17 16:14:38.099 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-17 16:14:38.115 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-17 16:14:40.200 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-17 16:14:40.204 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-07-17 16:14:40.300 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69ms. Found 0 Redis repository interfaces.
+2020-07-17 16:14:42.173 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2020-07-17 16:14:42.192 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2020-07-17 16:14:42.194 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-07-17 16:14:42.194 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-17 16:14:42.455 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring embedded WebApplicationContext
+2020-07-17 16:14:42.455 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4329 ms
+2020-07-17 16:14:44.781 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-07-17 16:14:44.810 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-07-17 16:15:54.085 [restartedMain] INFO  com.inspur.VueAppApplication - Starting VueAppApplication on zhuanghuan00 with PID 45080 (E:\IDEA_PROJECT\zh-vue\vue-app\target\classes started by zhuanghuan in E:\IDEA_PROJECT\zh-vue)
+2020-07-17 16:15:54.093 [restartedMain] INFO  com.inspur.VueAppApplication - No active profile set, falling back to default profiles: default
+2020-07-17 16:15:54.599 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-17 16:15:54.599 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-17 16:15:56.069 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-17 16:15:56.073 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-07-17 16:15:56.156 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59ms. Found 0 Redis repository interfaces.
+2020-07-17 16:15:57.278 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2020-07-17 16:15:57.295 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2020-07-17 16:15:57.296 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-07-17 16:15:57.296 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-17 16:15:57.485 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring embedded WebApplicationContext
+2020-07-17 16:15:57.486 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2886 ms
+2020-07-17 16:15:59.133 [restartedMain] INFO  com.inspur.executor.config.XxlJobConfig - >>>>>>>>>>> xxl-job config init.
+2020-07-17 16:15:59.611 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2020-07-17 16:15:59.672 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24cf949a, org.springframework.security.web.context.SecurityContextPersistenceFilter@e07567e, org.springframework.security.web.header.HeaderWriterFilter@577ed0e1, org.springframework.security.web.authentication.logout.LogoutFilter@5a7bce6f, com.inspur.system.security.filter.JwtLoginAuthenticationFilter@43a1095, com.inspur.system.security.filter.JwtRequestAuthorizationFilter@532277c1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3dfe0c69, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7abf1d0c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b951df9, org.springframework.security.web.session.SessionManagementFilter@4df734c7, org.springframework.security.web.access.ExceptionTranslationFilter@3599ed46, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@e899c5a]
+2020-07-17 16:15:59.988 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-17 16:16:00.896 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-07-17 16:16:00.918 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:shardingJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@3f5be3d0[class com.inspur.executor.handler.SampleXxlJob#shardingJobHandler]
+2020-07-17 16:16:00.918 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:commandJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@4cc9abc6[class com.inspur.executor.handler.SampleXxlJob#commandJobHandler]
+2020-07-17 16:16:00.919 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@492c6895[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-07-17 16:16:00.919 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@6ba0fca6[class com.inspur.executor.handler.SampleXxlJob#httpJobHandler]
+2020-07-17 16:16:00.919 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler2, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@b85d761[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler2]
+2020-07-17 16:16:01.110 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2020-07-17 16:16:01.241 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path '/JwtVue'
+2020-07-17 16:16:01.308 [restartedMain] INFO  com.inspur.VueAppApplication - Started VueAppApplication in 8.811 seconds (JVM running for 11.629)
+2020-07-17 16:16:03.591 [Thread-230] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
+2020-07-17 16:16:21.300 [xxl-rpc, EmbedServer bizThreadPool-287015281] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:5, handler:com.xxl.job.core.handler.impl.MethodJobHandler@492c6895[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-07-17 16:23:34.688 [http-nio-8085-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-17 16:23:34.689 [http-nio-8085-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-07-17 16:23:34.709 [http-nio-8085-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 19 ms
+2020-07-17 16:23:34.869 [http-nio-8085-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-07-17 16:23:35.262 [http-nio-8085-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-07-17 18:20:40.064 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.30.3:9999/'}, registryResult:ReturnT [code=500, msg=xxl-rpc remoting error(Connection refused: connect), for url : http://127.0.0.1:8080/xxl-job-admin/api/registry, content=null]
+2020-07-17 18:20:44.630 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-17 18:20:44.632 [Thread-230] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server stop.
+2020-07-17 18:20:45.721 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry-remove fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.30.3:9999/'}, registryResult:ReturnT [code=500, msg=xxl-rpc remoting error(Connection refused: connect), for url : http://127.0.0.1:8080/xxl-job-admin/api/registryRemove, content=null]
+2020-07-17 18:20:45.722 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job, executor registry thread destory.
+2020-07-17 18:20:45.724 [SpringContextShutdownHook] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server destroy success.
+2020-07-17 18:20:45.733 [Thread-236] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-236,10,main]
+2020-07-17 18:20:45.735 [xxl-job, executor JobLogFileCleanThread] INFO  com.xxl.job.core.thread.JobLogFileCleanThread - >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destory.
+2020-07-17 18:20:47.969 [xxl-job, executor TriggerCallbackThread] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor callback thread destory.
+2020-07-17 18:20:47.970 [Thread-229] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor retry callback thread destory.
+2020-07-17 18:20:48.133 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-07-17 18:20:48.161 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

@@ -1,6 +1,6 @@
 package com.inspur.system.security.provider;
 
-import com.inspur.constant.Constant;
+import com.inspur.constant.TokenConstant;
 import com.inspur.system.security.token.JwtAuthenticationToken;
 import com.inspur.system.utils.DesPassword;
 import com.inspur.system.utils.DesTools;
@@ -25,7 +25,7 @@ public class JwtLoginAuthenticationProvider implements AuthenticationProvider {
         String password = (String) authentication.getCredentials();
         UserDetails systemUserDetails = systemUserDetailService.loadUserByUsername(userName);
         if (StringUtils.isEmpty(systemUserDetails.getPassword())) {
-            throw new BadCredentialsException(Constant.LOGIN_ERROR);
+            throw new BadCredentialsException(TokenConstant.LOGIN_ERROR);
         }
         JwtAuthenticationToken jwtAuthenticationToken = null;
         DesPassword desPassword = new DesPassword();
@@ -36,7 +36,7 @@ public class JwtLoginAuthenticationProvider implements AuthenticationProvider {
             jwtAuthenticationToken = new JwtAuthenticationToken(systemUserDetails, password, systemUserDetails.getAuthorities());
         } else {
             //用户名或者密码不对
-            throw new BadCredentialsException(Constant.LOGIN_ERROR);
+            throw new BadCredentialsException(TokenConstant.LOGIN_ERROR);
         }
         return jwtAuthenticationToken;
     }

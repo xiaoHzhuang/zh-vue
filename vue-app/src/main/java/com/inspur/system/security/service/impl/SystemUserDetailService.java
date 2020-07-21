@@ -1,8 +1,8 @@
 package com.inspur.system.security.service.impl;
 
 import com.inspur.system.security.dao.SystemUserMapper;
-import com.inspur.system.security.po.SystemUser;
-import com.inspur.system.security.po.SystemUserDetail;
+import com.inspur.system.security.DO.SystemUser;
+import com.inspur.system.security.DO.SystemUserDetail;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

@@ -4,7 +4,7 @@ import com.inspur.mail.service.IMailService;
 import com.inspur.system.exception.ResponseEnum;
 import com.inspur.system.redis.util.RedisLockUtil;
 import com.inspur.system.security.dao.SystemUserMapper;
-import com.inspur.system.security.po.SystemUser;
+import com.inspur.system.security.DO.SystemUser;
 import com.inspur.system.security.service.IUserService;
 import com.inspur.system.utils.DesPassword;
 import com.inspur.system.utils.DesTools;

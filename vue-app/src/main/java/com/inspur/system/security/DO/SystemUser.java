@@ -1,4 +1,4 @@
-package com.inspur.system.security.po;
+package com.inspur.system.security.DO;
 
 public class SystemUser {
     private String userid;

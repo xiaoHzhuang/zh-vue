@@ -1,4 +1,4 @@
-package com.inspur.system.security.po;
+package com.inspur.system.security.DO;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

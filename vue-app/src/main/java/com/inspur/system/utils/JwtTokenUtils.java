@@ -1,6 +1,6 @@
 package com.inspur.system.utils;
 
-import com.inspur.constant.Constant;
+import com.inspur.constant.TokenConstant;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -17,10 +17,10 @@ public class JwtTokenUtils {
     // 创建token
     public static String createToken(String username, boolean isRememberMe, Map<String, Object> claims) {
 //        long expiration = isRememberMe ? Constant.EXPIRATION_REMEMBER :Constant.EXPIRATION;
-        long expiration = Constant.BROWSER_TOKEN_EXPIRATION;
+        long expiration = TokenConstant.BROWSER_TOKEN_EXPIRATION;
         return Jwts.builder()
-                .signWith(SignatureAlgorithm.HS512, Constant.SIGNING_KEY)
-                .setIssuer(Constant.ISS)
+                .signWith(SignatureAlgorithm.HS512, TokenConstant.SIGNING_KEY)
+                .setIssuer(TokenConstant.ISS)
                 .setSubject(username)
                 .setIssuedAt(new Date())
                 .addClaims(claims)
@@ -56,7 +56,7 @@ public class JwtTokenUtils {
      */
     public static Claims getTokenBody(String token) {
         return Jwts.parser()
-                .setSigningKey(Constant.SIGNING_KEY)
+                .setSigningKey(TokenConstant.SIGNING_KEY)
                 .parseClaimsJws(token)
                 .getBody();
     }

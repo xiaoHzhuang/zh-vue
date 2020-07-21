@@ -1,0 +1,201 @@
+2020-07-10 08:24:40.222 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 08:24:50.935 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 08:25:01.203 [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 08:25:11.372 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 08:25:21.543 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 08:25:31.718 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 08:25:41.920 [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 08:25:52.194 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 08:26:02.793 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 08:26:13.920 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 08:26:25.994 [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 08:26:40.195 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 08:26:58.493 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 08:27:24.995 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 08:28:05.093 [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 08:28:45.194 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 08:29:25.294 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 08:30:05.393 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 08:30:45.494 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 08:31:23.701 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-10 08:31:23.703 [Thread-253] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server stop.
+2020-07-10 08:31:23.797 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.30.3:9999/'}, registryResult:ReturnT [code=200, msg=null, content=null]
+2020-07-10 08:31:23.797 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job, executor registry thread destory.
+2020-07-10 08:31:23.798 [SpringContextShutdownHook] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server destroy success.
+2020-07-10 08:31:23.828 [Thread-261] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-261,10,main]
+2020-07-10 08:31:23.831 [xxl-job, executor JobLogFileCleanThread] INFO  com.xxl.job.core.thread.JobLogFileCleanThread - >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destory.
+2020-07-10 08:31:24.457 [xxl-job, executor TriggerCallbackThread] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor callback thread destory.
+2020-07-10 08:31:24.478 [Thread-252] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor retry callback thread destory.
+2020-07-10 08:31:25.593 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 08:31:27.616 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-07-10 08:31:27.640 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-07-10 08:32:00.662 [restartedMain] INFO  com.inspur.Application - Starting Application on zhuanghuan00 with PID 33872 (E:\IDEA_PROJECT\zh-vue\vue-app\target\classes started by zhuanghuan in E:\IDEA_PROJECT\zh-vue)
+2020-07-10 08:32:00.670 [restartedMain] INFO  com.inspur.Application - No active profile set, falling back to default profiles: default
+2020-07-10 08:32:01.432 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-10 08:32:01.433 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-10 08:32:06.011 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-10 08:32:06.017 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-07-10 08:32:06.116 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62ms. Found 0 Redis repository interfaces.
+2020-07-10 08:32:08.685 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2020-07-10 08:32:08.708 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2020-07-10 08:32:08.709 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-07-10 08:32:08.710 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-10 08:32:09.006 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring embedded WebApplicationContext
+2020-07-10 08:32:09.007 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7573 ms
+2020-07-10 08:32:20.696 [restartedMain] INFO  com.inspur.executor.config.XxlJobConfig - >>>>>>>>>>> xxl-job config init.
+2020-07-10 08:32:21.052 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2020-07-10 08:32:21.136 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@470bbef3, org.springframework.security.web.context.SecurityContextPersistenceFilter@410aa06b, org.springframework.security.web.header.HeaderWriterFilter@23455d91, org.springframework.security.web.authentication.logout.LogoutFilter@ef1e11f, com.inspur.system.security.filter.JwtLoginAuthenticationFilter@7a3ab027, com.inspur.system.security.filter.JwtRequestAuthorizationFilter@5696d3a2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4492e4de, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2d6e36b9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5395a0a8, org.springframework.security.web.session.SessionManagementFilter@1b2a2a31, org.springframework.security.web.access.ExceptionTranslationFilter@7936cc1a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@217e6fd7]
+2020-07-10 08:32:21.475 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-10 08:32:22.729 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-07-10 08:32:22.758 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@e8c0f74[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-07-10 08:32:22.759 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler2, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@264b7c8b[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler2]
+2020-07-10 08:32:22.760 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@5afb21d4[class com.inspur.executor.handler.SampleXxlJob#httpJobHandler]
+2020-07-10 08:32:22.760 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:commandJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@44866826[class com.inspur.executor.handler.SampleXxlJob#commandJobHandler]
+2020-07-10 08:32:22.760 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:shardingJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@2a1f286d[class com.inspur.executor.handler.SampleXxlJob#shardingJobHandler]
+2020-07-10 08:32:23.483 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2020-07-10 08:32:23.595 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path '/JwtVue'
+2020-07-10 08:32:23.784 [restartedMain] INFO  com.inspur.Application - Started Application in 25.172 seconds (JVM running for 34.476)
+2020-07-10 08:32:26.839 [Thread-224] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
+2020-07-10 08:32:40.736 [xxl-rpc, EmbedServer bizThreadPool-530319589] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:5, handler:com.xxl.job.core.handler.impl.MethodJobHandler@e8c0f74[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-07-10 08:32:57.843 [http-nio-8085-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-10 08:32:57.843 [http-nio-8085-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-07-10 08:32:57.858 [http-nio-8085-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+2020-07-10 08:32:57.986 [http-nio-8085-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-07-10 08:32:58.459 [http-nio-8085-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-07-10 10:48:22.149 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-10 10:48:22.152 [Thread-224] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server stop.
+2020-07-10 10:48:22.184 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.30.3:9999/'}, registryResult:ReturnT [code=200, msg=null, content=null]
+2020-07-10 10:48:22.185 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job, executor registry thread destory.
+2020-07-10 10:48:22.185 [SpringContextShutdownHook] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server destroy success.
+2020-07-10 10:48:22.206 [Thread-232] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-232,10,main]
+2020-07-10 10:48:22.207 [xxl-job, executor JobLogFileCleanThread] INFO  com.xxl.job.core.thread.JobLogFileCleanThread - >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destory.
+2020-07-10 10:48:22.271 [xxl-job, executor TriggerCallbackThread] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor callback thread destory.
+2020-07-10 10:48:22.271 [Thread-223] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor retry callback thread destory.
+2020-07-10 10:48:22.431 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-07-10 10:48:22.458 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-07-10 13:07:01.575 [restartedMain] INFO  com.inspur.Application - Starting Application on zhuanghuan00 with PID 40136 (E:\IDEA_PROJECT\zh-vue\vue-app\target\classes started by zhuanghuan in E:\IDEA_PROJECT\zh-vue)
+2020-07-10 13:07:01.589 [restartedMain] INFO  com.inspur.Application - No active profile set, falling back to default profiles: default
+2020-07-10 13:07:02.194 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-10 13:07:02.195 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-10 13:07:04.650 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-10 13:07:04.657 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-07-10 13:07:04.786 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 92ms. Found 0 Redis repository interfaces.
+2020-07-10 13:07:06.325 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2020-07-10 13:07:06.342 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2020-07-10 13:07:06.345 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-07-10 13:07:06.346 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-10 13:07:06.629 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring embedded WebApplicationContext
+2020-07-10 13:07:06.629 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4433 ms
+2020-07-10 13:07:08.774 [restartedMain] INFO  com.inspur.executor.config.XxlJobConfig - >>>>>>>>>>> xxl-job config init.
+2020-07-10 13:07:09.176 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2020-07-10 13:07:09.312 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@335cc, org.springframework.security.web.context.SecurityContextPersistenceFilter@1f030f58, org.springframework.security.web.header.HeaderWriterFilter@655de82b, org.springframework.security.web.authentication.logout.LogoutFilter@58998c0e, com.inspur.system.security.filter.JwtLoginAuthenticationFilter@175c9da9, com.inspur.system.security.filter.JwtRequestAuthorizationFilter@3ce068f6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f074a82, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5f22078, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@58f5de9b, org.springframework.security.web.session.SessionManagementFilter@28b1845, org.springframework.security.web.access.ExceptionTranslationFilter@6334b45d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@248d1ce9]
+2020-07-10 13:07:09.571 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-10 13:07:10.322 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-07-10 13:07:10.352 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@2e1691cb[class com.inspur.executor.handler.SampleXxlJob#httpJobHandler]
+2020-07-10 13:07:10.353 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@db87c9a[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-07-10 13:07:10.353 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler2, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@607f461[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler2]
+2020-07-10 13:07:10.354 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:commandJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@449c0074[class com.inspur.executor.handler.SampleXxlJob#commandJobHandler]
+2020-07-10 13:07:10.355 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:shardingJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@5e1e49e5[class com.inspur.executor.handler.SampleXxlJob#shardingJobHandler]
+2020-07-10 13:07:10.542 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2020-07-10 13:07:11.428 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path '/JwtVue'
+2020-07-10 13:07:11.459 [restartedMain] INFO  com.inspur.Application - Started Application in 13.247 seconds (JVM running for 17.476)
+2020-07-10 13:07:13.551 [Thread-220] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
+2020-07-10 13:07:40.425 [xxl-rpc, EmbedServer bizThreadPool-1781617105] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:5, handler:com.xxl.job.core.handler.impl.MethodJobHandler@db87c9a[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-07-10 13:11:23.279 [http-nio-8085-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-10 13:11:23.279 [http-nio-8085-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-07-10 13:11:23.302 [http-nio-8085-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 22 ms
+2020-07-10 13:11:24.284 [http-nio-8085-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-07-10 13:11:24.669 [http-nio-8085-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-07-10 16:16:27.510 [lettuce-nioEventLoop-6-1] INFO  io.lettuce.core.protocol.CommandHandler - null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2020-07-10 16:16:27.808 [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /192.168.30.10:6379
+2020-07-10 16:16:41.425 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 16:16:51.665 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 16:17:01.843 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 16:17:11.944 [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 16:17:22.043 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 16:17:32.229 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 16:17:42.447 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 16:17:52.743 [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 16:18:03.344 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 16:18:14.443 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 16:18:26.545 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 16:18:40.743 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 16:18:58.946 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 16:19:25.343 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 16:20:05.444 [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-10 16:20:06.461 [lettuce-nioEventLoop-6-1] INFO  io.lettuce.core.protocol.ReconnectionHandler - Reconnected to 192.168.30.10:6379
+2020-07-10 16:37:59.043 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.30.3:9999/'}, registryResult:ReturnT [code=500, msg=xxl-rpc remoting error(Connection refused: connect), for url : http://127.0.0.1:8080/xxl-job-admin/api/registry, content=null]
+2020-07-10 16:38:07.315 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-10 16:38:07.317 [Thread-220] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server stop.
+2020-07-10 16:38:08.321 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry-remove fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.30.3:9999/'}, registryResult:ReturnT [code=500, msg=xxl-rpc remoting error(Connection refused: connect), for url : http://127.0.0.1:8080/xxl-job-admin/api/registryRemove, content=null]
+2020-07-10 16:38:08.322 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job, executor registry thread destory.
+2020-07-10 16:38:08.322 [SpringContextShutdownHook] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server destroy success.
+2020-07-10 16:38:08.330 [Thread-227] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-227,10,main]
+2020-07-10 16:38:08.331 [xxl-job, executor JobLogFileCleanThread] INFO  com.xxl.job.core.thread.JobLogFileCleanThread - >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destory.
+2020-07-10 16:38:11.916 [xxl-job, executor TriggerCallbackThread] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor callback thread destory.
+2020-07-10 16:38:11.916 [Thread-219] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor retry callback thread destory.
+2020-07-10 16:38:15.102 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-07-10 16:38:15.123 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-07-10 17:01:11.245 [restartedMain] INFO  com.inspur.Application - Starting Application on zhuanghuan00 with PID 12188 (E:\IDEA_PROJECT\zh-vue\vue-app\target\classes started by zhuanghuan in E:\IDEA_PROJECT\zh-vue)
+2020-07-10 17:01:11.251 [restartedMain] INFO  com.inspur.Application - No active profile set, falling back to default profiles: default
+2020-07-10 17:01:11.788 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-10 17:01:11.789 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-10 17:01:16.963 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-10 17:01:16.986 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-07-10 17:01:17.274 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 152ms. Found 0 Redis repository interfaces.
+2020-07-10 17:01:19.139 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2020-07-10 17:01:19.160 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2020-07-10 17:01:19.162 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-07-10 17:01:19.163 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-10 17:01:19.452 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring embedded WebApplicationContext
+2020-07-10 17:01:19.453 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7659 ms
+2020-07-10 17:01:23.730 [restartedMain] INFO  com.inspur.executor.config.XxlJobConfig - >>>>>>>>>>> xxl-job config init.
+2020-07-10 17:01:24.166 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2020-07-10 17:01:24.244 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@394c6905, org.springframework.security.web.context.SecurityContextPersistenceFilter@2fe9c7eb, org.springframework.security.web.header.HeaderWriterFilter@1a709ff1, org.springframework.security.web.authentication.logout.LogoutFilter@325f3d42, com.inspur.system.security.filter.JwtLoginAuthenticationFilter@86d2a3a, com.inspur.system.security.filter.JwtRequestAuthorizationFilter@451a0380, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@64ca6ffa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@199b6c65, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@dd7536, org.springframework.security.web.session.SessionManagementFilter@1cbd4e36, org.springframework.security.web.access.ExceptionTranslationFilter@1909a9c1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7269fa7c]
+2020-07-10 17:01:24.582 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-10 17:01:25.531 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-07-10 17:01:25.559 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler2, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@2f4a0aca[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler2]
+2020-07-10 17:01:25.560 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@17ae6596[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-07-10 17:01:25.561 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@a2aaac[class com.inspur.executor.handler.SampleXxlJob#httpJobHandler]
+2020-07-10 17:01:25.562 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:shardingJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@274e304e[class com.inspur.executor.handler.SampleXxlJob#shardingJobHandler]
+2020-07-10 17:01:25.563 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:commandJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@582d6237[class com.inspur.executor.handler.SampleXxlJob#commandJobHandler]
+2020-07-10 17:01:25.806 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2020-07-10 17:01:25.972 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path '/JwtVue'
+2020-07-10 17:01:26.087 [restartedMain] INFO  com.inspur.Application - Started Application in 17.578 seconds (JVM running for 23.208)
+2020-07-10 17:01:28.907 [Thread-238] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
+2020-07-10 17:01:51.007 [xxl-rpc, EmbedServer bizThreadPool-838452158] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:5, handler:com.xxl.job.core.handler.impl.MethodJobHandler@17ae6596[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-07-10 17:02:21.609 [http-nio-8085-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-10 17:02:21.610 [http-nio-8085-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-07-10 17:02:21.627 [http-nio-8085-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+2020-07-10 17:02:22.943 [http-nio-8085-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-07-10 17:02:23.327 [http-nio-8085-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-07-10 17:44:31.372 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.30.3:9999/'}, registryResult:ReturnT [code=500, msg=xxl-rpc remoting error(Connection refused: connect), for url : http://127.0.0.1:8080/xxl-job-admin/api/registry, content=null]
+2020-07-10 17:44:34.307 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-10 17:44:34.307 [Thread-238] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server stop.
+2020-07-10 17:44:35.347 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry-remove fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.30.3:9999/'}, registryResult:ReturnT [code=500, msg=xxl-rpc remoting error(Connection refused: connect), for url : http://127.0.0.1:8080/xxl-job-admin/api/registryRemove, content=null]
+2020-07-10 17:44:35.348 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job, executor registry thread destory.
+2020-07-10 17:44:35.350 [SpringContextShutdownHook] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server destroy success.
+2020-07-10 17:44:35.354 [Thread-245] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-245,10,main]
+2020-07-10 17:44:35.354 [xxl-job, executor JobLogFileCleanThread] INFO  com.xxl.job.core.thread.JobLogFileCleanThread - >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destory.
+2020-07-10 17:44:36.381 [xxl-job, executor TriggerCallbackThread] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor callback thread destory.
+2020-07-10 17:44:36.385 [Thread-237] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor retry callback thread destory.
+2020-07-10 17:44:36.575 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-07-10 17:44:36.606 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

@@ -1,6 +1,6 @@
 package com.inspur.system.utils;
 
-import com.inspur.system.security.po.SystemUserDetail;
+import com.inspur.system.security.DO.SystemUserDetail;
 import org.springframework.security.core.context.SecurityContextHolder;
 
 public class LoginUserUtil {

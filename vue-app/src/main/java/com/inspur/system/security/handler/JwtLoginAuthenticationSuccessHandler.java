@@ -1,7 +1,7 @@
 package com.inspur.system.security.handler;
 
-import com.inspur.constant.Constant;
-import com.inspur.system.security.po.SystemUserDetail;
+import com.inspur.constant.TokenConstant;
+import com.inspur.system.security.DO.SystemUserDetail;
 import com.inspur.system.security.token.TokenRedisUtil;
 import com.inspur.system.utils.JwtTokenUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,10 +30,10 @@ public class JwtLoginAuthenticationSuccessHandler extends SavedRequestAwareAuthe
         claims.put("userName", systemUserDetail.getUsername());
         //这里创建的token只是单纯的token,按照jwt的规定，最后请求的格式应该是 `Bearer token`
         String tempToken = JwtTokenUtils.createToken(systemUserDetail.getUsername(), false, claims);
-        String token = Constant.TOKEN_PREFIX + tempToken;
+        String token = TokenConstant.TOKEN_PREFIX + tempToken;
         tokenRedisUtil.saveTokenwithExpireTime(tempToken, systemUserDetail.getUserId());
-        response.setHeader(Constant.TOKEN_HEADER, token);
-        request.setAttribute(Constant.TOKEN_HEADER, token);
+        response.setHeader(TokenConstant.TOKEN_HEADER, token);
+        request.setAttribute(TokenConstant.TOKEN_HEADER, token);
         request.setAttribute("userName", systemUserDetail.getUsername());
         request.setAttribute("userCaption", systemUserDetail.getUserCaption());
         //请求内部重定向

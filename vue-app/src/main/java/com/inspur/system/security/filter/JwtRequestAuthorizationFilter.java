@@ -1,9 +1,9 @@
 package com.inspur.system.security.filter;
 
-import com.inspur.constant.Constant;
+import com.inspur.constant.TokenConstant;
 import com.inspur.system.response.ResponseCode;
-import com.inspur.system.security.po.SystemUser;
-import com.inspur.system.security.po.SystemUserDetail;
+import com.inspur.system.security.DO.SystemUser;
+import com.inspur.system.security.DO.SystemUserDetail;
 import com.inspur.system.security.token.JwtAuthenticationToken;
 import com.inspur.system.security.token.TokenRedisUtil;
 import com.inspur.system.utils.JwtTokenUtils;
@@ -62,15 +62,15 @@ public class JwtRequestAuthorizationFilter extends BasicAuthenticationFilter {
 
     private void authenticateToken(HttpServletRequest request,
                                    HttpServletResponse response, FilterChain chain) throws IOException, ServletException {
-        String tokenHeader = request.getHeader(Constant.TOKEN_HEADER);
+        String tokenHeader = request.getHeader(TokenConstant.TOKEN_HEADER);
         // 如果请求头中没有token信息则直接状态码-1，前台自动跳转至浏览器界面
-        if (tokenHeader == null || !tokenHeader.startsWith(Constant.TOKEN_PREFIX)) {
+        if (tokenHeader == null || !tokenHeader.startsWith(TokenConstant.TOKEN_PREFIX)) {
             logger.info("token不存在");
             reLoginResponse(response, "token不存在", ResponseCode.NEED_LOGIN.getCode());
             return;
         }
         //1:从前台请求中获取token
-        String tokenFromBrowser = tokenHeader.replace(Constant.TOKEN_PREFIX, "");
+        String tokenFromBrowser = tokenHeader.replace(TokenConstant.TOKEN_PREFIX, "");
         String userId = JwtTokenUtils.getTokenBody(tokenFromBrowser).get("userId").toString();
         //2:检验前台请求token是否过期，若来自前台的token过期，需要前台跳转到登录界面
         boolean tokenValidate = JwtTokenUtils.isExpiration(tokenFromBrowser);
@@ -112,7 +112,7 @@ public class JwtRequestAuthorizationFilter extends BasicAuthenticationFilter {
             claimsMap.put("userName", claims.get("userName"));
             String newToken = JwtTokenUtils.createToken(claims.get("userName").toString(), false, claimsMap);
             tokenRedisUtil.saveTokenwithExpireTime(newToken, claims.get("userId").toString());
-            response.setHeader(Constant.TOKEN_HEADER, newToken);
+            response.setHeader(TokenConstant.TOKEN_HEADER, newToken);
         }
     }
 
@@ -136,7 +136,7 @@ public class JwtRequestAuthorizationFilter extends BasicAuthenticationFilter {
      */
 
     private JwtAuthenticationToken getAuthentication(String tokenHeader) {
-        String token = tokenHeader.replace(Constant.TOKEN_PREFIX, "");
+        String token = tokenHeader.replace(TokenConstant.TOKEN_PREFIX, "");
         String username = JwtTokenUtils.getUsername(token);
         String userId = (String) JwtTokenUtils.getTokenBody(token).get("userId");
         SystemUser systemUser = new SystemUser();

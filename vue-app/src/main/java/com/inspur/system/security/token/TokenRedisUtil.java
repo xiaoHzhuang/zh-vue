@@ -1,11 +1,9 @@
 package com.inspur.system.security.token;
 
-import com.inspur.constant.Constant;
+import com.inspur.constant.TokenConstant;
 import com.inspur.system.redis.util.RedisUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
-import java.util.Map;
 
 @Component
 public class TokenRedisUtil {
@@ -20,7 +18,7 @@ public class TokenRedisUtil {
      */
     public void saveTokenwithExpireTime(String token, String userId) {
         //token保存至redis中
-        redisUtil.set(userId, token, Constant.REDIS_TOKEN_EXPIRATION);
+        redisUtil.set(userId, token, TokenConstant.REDIS_TOKEN_EXPIRATION);
     }
 
     /**
@@ -39,7 +37,7 @@ public class TokenRedisUtil {
      * @param tokenKey
      */
     public void refreshExpireTime(String tokenKey) {
-        redisUtil.expire(tokenKey, Constant.REDIS_TOKEN_EXPIRATION);
+        redisUtil.expire(tokenKey, TokenConstant.REDIS_TOKEN_EXPIRATION);
     }
 
     /**

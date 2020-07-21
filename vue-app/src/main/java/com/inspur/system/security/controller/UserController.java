@@ -2,15 +2,15 @@ package com.inspur.system.security.controller;
 
 import com.inspur.system.response.ResponseCode;
 import com.inspur.system.response.ServerResponse;
-import com.inspur.constant.Constant;
-import com.inspur.system.security.po.SystemUser;
-import com.inspur.system.security.po.SystemUserDetail;
+import com.inspur.constant.TokenConstant;
+import com.inspur.system.security.DO.SystemUser;
+import com.inspur.system.security.DO.SystemUserDetail;
+import com.inspur.system.security.VO.LoginUserVO;
 import com.inspur.system.security.service.IUserService;
 import com.inspur.system.security.token.TokenRedisUtil;
 import com.inspur.system.utils.LoginUserUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -33,22 +33,20 @@ public class UserController {
 
 
     @RequestMapping("login")
-    public ServerResponse<Map<String, Object>> login(HttpServletRequest request) {
-        Map<String, Object> rsMap = new HashMap<String, Object>(2);
-        rsMap.put("token", request.getAttribute(Constant.TOKEN_HEADER));
-        rsMap.put("userName", request.getAttribute("userCaption"));
-        return ServerResponse.createBySuccess(rsMap);
+    public ServerResponse<LoginUserVO> login(HttpServletRequest request) {
+        String token = (String) request.getAttribute(TokenConstant.TOKEN_HEADER);
+        String userName = (String) request.getAttribute("userCaption");
+        return ServerResponse.createBySuccess(new LoginUserVO(token, userName));
     }
 
     @RequestMapping("logOut")
-    public ServerResponse<Map<String, Object>> logOut(HttpServletResponse response) {
+    public ServerResponse<String> logOut(HttpServletResponse response) {
         Map<String, Object> rsMap = new HashMap<String, Object>(2);
         SystemUserDetail systemUserDetail = LoginUserUtil.getCurrentUser();
         if (tokenRedisUtil.hasTokenKey(systemUserDetail.getUserId())) {
             tokenRedisUtil.deleteToken(systemUserDetail.getUserId());
         }
-        rsMap.put("status", ResponseCode.RE_LOGIN.getCode());
-        return ServerResponse.createBySuccess(rsMap);
+        return ServerResponse.createBySuccess(String.valueOf(ResponseCode.RE_LOGIN.getCode()));
     }
 
 

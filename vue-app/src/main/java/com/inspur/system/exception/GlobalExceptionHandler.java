@@ -73,6 +73,5 @@ public class GlobalExceptionHandler {
     public int getCode(BaseException e) {
         return e.getResponseEnum().getCode();
     }
-
-
+    
 }

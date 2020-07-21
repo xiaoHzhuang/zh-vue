@@ -1,6 +1,6 @@
 package com.inspur.system.security.dao;
 
-import com.inspur.system.security.po.SystemUser;
+import com.inspur.system.security.DO.SystemUser;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper

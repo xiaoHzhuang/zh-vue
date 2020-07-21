@@ -1,6 +1,6 @@
 package com.inspur.system.security.service;
 
-import com.inspur.system.security.po.SystemUser;
+import com.inspur.system.security.DO.SystemUser;
 
 public interface IUserService {
     void regiser(SystemUser user);

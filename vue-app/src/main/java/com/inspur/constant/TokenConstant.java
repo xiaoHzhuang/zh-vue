@@ -1,6 +1,6 @@
 package com.inspur.constant;
 
-public class Constant {
+public class TokenConstant {
     /**
      * 过期时间是3个小时
      */

@@ -1,6 +1,6 @@
 package com.inspur.system.security.handler;
 
-import com.inspur.constant.Constant;
+import com.inspur.constant.TokenConstant;
 import com.inspur.system.response.ResponseCode;
 import com.inspur.utils.HttpResponseUtil;
 import org.springframework.security.core.AuthenticationException;
@@ -21,7 +21,7 @@ public class JwtLoginAuthenticationFailureHandler extends SimpleUrlAuthenticatio
     public void onAuthenticationFailure(HttpServletRequest request, HttpServletResponse response, AuthenticationException exception) throws IOException, ServletException {
         Map<String, String> infoMap = new HashMap<String, String>(2);
         infoMap.put("status", ResponseCode.NEED_LOGIN.getCode() + "");
-        if (exception.getMessage().equalsIgnoreCase(Constant.LOGIN_ERROR)) {
+        if (exception.getMessage().equalsIgnoreCase(TokenConstant.LOGIN_ERROR)) {
             infoMap.put("msg", "用户名或者密码不对");
         } else {
             infoMap.put("msg", "未知原因");
