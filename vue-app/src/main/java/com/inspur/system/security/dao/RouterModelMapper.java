@@ -12,5 +12,5 @@ public interface RouterModelMapper {
 
     int insertSelective(RouterModel record);
 
-    List<RouterVO> listModules();
+    List<RouterVO> listModules(String moduleId);
 }

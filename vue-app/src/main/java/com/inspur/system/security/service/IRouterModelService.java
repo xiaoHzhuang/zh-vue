@@ -5,5 +5,5 @@ import com.inspur.system.security.VO.RouterVO;
 import java.util.List;
 
 public interface IRouterModelService {
-    List<RouterVO> listModules();
+    List<RouterVO> listModules(String moduleId);
 }

@@ -14,7 +14,7 @@ public class RouterModelServiceImpl implements IRouterModelService {
     private RouterModelMapper routerModelMapper;
 
     @Override
-    public List<RouterVO> listModules() {
-        return routerModelMapper.listModules();
+    public List<RouterVO> listModules(String moduleId) {
+        return routerModelMapper.listModules(moduleId);
     }
 }

@@ -16,7 +16,7 @@ public class RouterModuleController {
     private IRouterModelService routerModuleServiceImpl;
 
     @RequestMapping("list")
-    public ServerResponse<List<RouterVO>> listModules() {
-        return ServerResponse.createBySuccess(routerModuleServiceImpl.listModules());
+    public ServerResponse<List<RouterVO>> listModules(String moduleId) {
+        return ServerResponse.createBySuccess(routerModuleServiceImpl.listModules(moduleId));
     }
 }

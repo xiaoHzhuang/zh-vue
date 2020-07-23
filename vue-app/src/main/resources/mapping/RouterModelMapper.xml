@@ -93,8 +93,19 @@
         <result column="orderid" property="orderid" jdbcType="INTEGER"/>
     </resultMap>
     <select id="listModules" resultMap="VoResultMap">
-    select
-    a.id, a.path, a.name,a.component, a.redirect, a.iconcls, a.meta, a.pid,a.orderid
-    from routermodel a where a.pid is null or a.pid = '' order by a.orderid asc
+        select
+        a.id, a.path, a.name,a.component, a.redirect, a.iconcls, a.meta, a.pid,a.orderid
+        from routermodel a
+        <where>
+            <choose>
+                <when test="moduleId!=null">
+                    a.pid=#{moduleId} order by a.orderid asc
+                </when>
+                <otherwise>
+                    a.pid is null or a.pid = '' order by a.orderid asc
+                </otherwise>
+            </choose>
+        </where>
+
     </select>
 </mapper>
