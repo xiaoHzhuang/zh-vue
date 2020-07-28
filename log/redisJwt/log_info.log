@@ -11,3 +11,164 @@
 2020-07-23 10:55:43.699 [Thread-227] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor retry callback thread destory.
 2020-07-23 10:55:44.150 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2020-07-23 10:55:44.176 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-07-23 11:23:45.830 [restartedMain] INFO  com.inspur.VueAppApplication - Starting VueAppApplication on zhuanghuan00 with PID 22164 (E:\IDEA_PROJECT\zh-vue\vue-app\target\classes started by zhuanghuan in E:\IDEA_PROJECT\zh-vue)
+2020-07-23 11:23:45.862 [restartedMain] INFO  com.inspur.VueAppApplication - No active profile set, falling back to default profiles: default
+2020-07-23 11:23:46.474 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-07-23 11:23:46.475 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-07-23 11:23:51.895 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-23 11:23:51.932 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-07-23 11:23:52.291 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 188ms. Found 0 Redis repository interfaces.
+2020-07-23 11:23:55.174 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2020-07-23 11:23:55.196 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2020-07-23 11:23:55.197 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-07-23 11:23:55.198 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-23 11:23:55.624 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring embedded WebApplicationContext
+2020-07-23 11:23:55.670 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 9194 ms
+2020-07-23 11:24:00.879 [restartedMain] INFO  com.inspur.executor.config.XxlJobConfig - >>>>>>>>>>> xxl-job config init.
+2020-07-23 11:24:04.015 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2020-07-23 11:24:04.305 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@34098294, org.springframework.security.web.context.SecurityContextPersistenceFilter@14f07c41, org.springframework.security.web.header.HeaderWriterFilter@2bf709b6, org.springframework.security.web.authentication.logout.LogoutFilter@642e061, com.inspur.system.security.filter.JwtLoginAuthenticationFilter@4279a31b, com.inspur.system.security.filter.JwtRequestAuthorizationFilter@7399ae5f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@17d3da85, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@376bfda0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@e68f4f4, org.springframework.security.web.session.SessionManagementFilter@4bcba1be, org.springframework.security.web.access.ExceptionTranslationFilter@12155552, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7a6d6dcd]
+2020-07-23 11:24:05.392 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-23 11:24:08.710 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-07-23 11:24:09.446 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:shardingJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@2e1b4af8[class com.inspur.executor.handler.SampleXxlJob#shardingJobHandler]
+2020-07-23 11:24:09.447 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:commandJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@36b980f1[class com.inspur.executor.handler.SampleXxlJob#commandJobHandler]
+2020-07-23 11:24:09.447 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@4c1940e5[class com.inspur.executor.handler.SampleXxlJob#httpJobHandler]
+2020-07-23 11:24:09.448 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler2, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@19331022[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler2]
+2020-07-23 11:24:09.451 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@6d0bc576[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-07-23 11:24:12.093 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2020-07-23 11:24:12.835 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path '/JwtVue'
+2020-07-23 11:24:13.005 [restartedMain] INFO  com.inspur.VueAppApplication - Started VueAppApplication in 29.981 seconds (JVM running for 34.888)
+2020-07-23 11:24:15.662 [Thread-249] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
+2020-07-23 11:24:33.761 [http-nio-8085-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-23 11:24:33.761 [http-nio-8085-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-07-23 11:24:33.778 [http-nio-8085-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+2020-07-23 11:24:34.203 [http-nio-8085-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-07-23 11:24:34.582 [http-nio-8085-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-07-23 11:24:51.793 [xxl-rpc, EmbedServer bizThreadPool-845377856] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:5, handler:com.xxl.job.core.handler.impl.MethodJobHandler@6d0bc576[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-07-23 12:16:17.940 [lettuce-nioEventLoop-6-1] INFO  io.lettuce.core.protocol.CommandHandler - null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2020-07-23 12:16:18.206 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /192.168.30.10:6379
+2020-07-23 12:18:22.372 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:18:32.524 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:18:42.673 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:18:52.774 [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:19:02.874 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:19:12.972 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:19:23.173 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:19:33.473 [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:19:44.073 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:19:55.174 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:20:07.274 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:20:21.474 [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:20:39.672 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:21:06.074 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:21:46.173 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:22:26.274 [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:23:06.372 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:23:46.476 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:24:26.601 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:25:06.727 [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:25:46.853 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:26:26.978 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:27:07.104 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:27:47.229 [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:28:27.354 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:29:07.464 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:29:47.565 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:30:27.664 [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:31:07.764 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:31:47.865 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:32:27.964 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:33:08.063 [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:33:48.164 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:34:28.264 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:35:08.364 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:35:48.464 [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:36:28.565 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:37:08.665 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:37:48.766 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:38:28.866 [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:39:08.968 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:39:49.068 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:40:29.169 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:41:09.268 [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:41:49.367 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:42:29.467 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:43:09.567 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:43:49.667 [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:44:29.767 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:45:09.868 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:45:49.969 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:46:30.070 [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:47:10.174 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:47:50.276 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:48:30.380 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:49:10.484 [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:49:50.587 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:50:30.690 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:51:10.794 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:51:50.894 [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:52:30.994 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:53:11.094 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:53:51.194 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:54:31.295 [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:55:11.395 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:55:51.494 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:56:31.594 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:57:11.694 [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:57:51.794 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:58:31.894 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:59:11.994 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 12:59:52.135 [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 13:00:32.191 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 13:01:12.290 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 13:01:52.389 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 13:02:32.489 [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 13:03:12.587 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 13:03:52.688 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 13:04:32.788 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 13:05:12.889 [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 13:05:52.987 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 13:06:33.087 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 13:07:13.189 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 13:07:53.289 [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 13:08:33.388 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 13:09:13.488 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 13:09:53.588 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 13:10:33.689 [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 13:11:13.788 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 13:11:53.891 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 13:12:33.991 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 13:13:14.088 [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 13:13:54.187 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 13:14:34.299 [lettuce-eventExecutorLoop-1-1] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 13:15:14.388 [lettuce-eventExecutorLoop-1-2] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 13:15:54.489 [lettuce-eventExecutorLoop-1-3] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 13:16:34.603 [lettuce-eventExecutorLoop-1-4] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was 192.168.30.10:6379
+2020-07-23 13:16:55.305 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-23 13:16:55.307 [Thread-249] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server stop.
+2020-07-23 13:16:55.356 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.30.3:9999/'}, registryResult:ReturnT [code=200, msg=null, content=null]
+2020-07-23 13:16:55.356 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job, executor registry thread destory.
+2020-07-23 13:16:55.375 [SpringContextShutdownHook] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server destroy success.
+2020-07-23 13:16:55.386 [Thread-258] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-258,10,main]
+2020-07-23 13:16:55.397 [xxl-job, executor JobLogFileCleanThread] INFO  com.xxl.job.core.thread.JobLogFileCleanThread - >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destory.
+2020-07-23 13:16:55.426 [xxl-job, executor TriggerCallbackThread] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor callback thread destory.
+2020-07-23 13:16:55.426 [Thread-248] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor retry callback thread destory.
+2020-07-23 13:16:55.491 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-07-23 13:16:55.515 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
