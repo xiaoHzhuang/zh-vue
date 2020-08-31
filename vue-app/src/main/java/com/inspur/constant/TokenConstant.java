@@ -4,11 +4,11 @@ public class TokenConstant {
     /**
      * 过期时间是3个小时
      */
-    public static final long REDIS_TOKEN_EXPIRATION = 3 * 60 * 60L;
+    public static final long REDIS_TOKEN_EXPIRATION = 3 * 60 * 60*1000L;
     /**
      * 过期时间是24个小时
      */
-    public static final long BROWSER_TOKEN_EXPIRATION = 24 * 60 * 60L;
+    public static final long BROWSER_TOKEN_EXPIRATION = 24 * 60 * 60*1000L;
 
     /**
      * 选择了记住我之后的过期时间为7天

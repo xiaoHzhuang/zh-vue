@@ -11,6 +11,7 @@
         <module>vue-app</module>
         <module>job-core</module>
         <module>job-admin</module>
+        <module>kafka-producer</module>
     </modules>
     <packaging>pom</packaging>
 

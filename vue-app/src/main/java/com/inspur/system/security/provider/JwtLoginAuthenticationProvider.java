@@ -1,10 +1,10 @@
 package com.inspur.system.security.provider;
 
 import com.inspur.constant.TokenConstant;
-import com.inspur.system.security.token.JwtAuthenticationToken;
-import com.inspur.system.utils.DesPassword;
-import com.inspur.system.utils.DesTools;
-import com.inspur.system.utils.StringUtils;
+import com.inspur.system.security.token.BO.JwtAuthenticationToken;
+import com.inspur.utils.DesPassword;
+import com.inspur.utils.DesTools;
+import com.inspur.utils.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.BadCredentialsException;

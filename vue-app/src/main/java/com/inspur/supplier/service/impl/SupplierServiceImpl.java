@@ -4,7 +4,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.inspur.system.page.PO.PageRequest;
 import com.inspur.system.page.PO.PageResult;
-import com.inspur.system.page.util.PageUtils;
+import com.inspur.system.page.utils.PageUtils;
 import com.inspur.supplier.DO.Supplier;
 import com.inspur.supplier.DO.SupplierQueryModel;
 import com.inspur.supplier.dao.SupplierMapper;

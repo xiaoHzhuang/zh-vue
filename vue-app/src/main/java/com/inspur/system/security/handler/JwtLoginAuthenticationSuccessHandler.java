@@ -1,9 +1,9 @@
 package com.inspur.system.security.handler;
 
 import com.inspur.constant.TokenConstant;
-import com.inspur.system.security.DO.SystemUserDetail;
-import com.inspur.system.security.token.TokenRedisUtil;
-import com.inspur.system.utils.JwtTokenUtils;
+import com.inspur.system.login.DO.SystemUserDetail;
+import com.inspur.system.security.token.service.TokenRedisService;
+import com.inspur.system.security.token.utils.JwtTokenUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.authentication.SavedRequestAwareAuthenticationSuccessHandler;
@@ -20,7 +20,7 @@ import java.util.Map;
 public class JwtLoginAuthenticationSuccessHandler extends SavedRequestAwareAuthenticationSuccessHandler {
 
     @Autowired
-    private TokenRedisUtil tokenRedisUtil;
+    private TokenRedisService tokenRedisUtil;
 
     @Override
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws ServletException, IOException {

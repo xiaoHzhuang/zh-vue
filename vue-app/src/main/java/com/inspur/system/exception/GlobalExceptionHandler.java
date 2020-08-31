@@ -23,6 +23,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(value = BusinessException.class)
     @ResponseBody
     public ServerResponse handle(BaseException e) {
+        e.printStackTrace();
         log.error(e.getMessage(), ExceptionLogerUtils.getErrmessage(e));
         return ServerResponse.createByErrorCodeMessage(getCode(e), getMessage(e));
     }
@@ -36,6 +37,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(value = BaseException.class)
     @ResponseBody
     public ServerResponse handleBaseException(BaseException e) {
+        e.printStackTrace();
         log.error(e.getMessage(), ExceptionLogerUtils.getErrmessage(e));
         return ServerResponse.createByErrorCodeMessage(getCode(e), getMessage(e));
     }
@@ -49,6 +51,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(value = Exception.class)
     @ResponseBody
     public ServerResponse handleServletException(Exception e) {
+        e.printStackTrace();
         log.error(e.getMessage(), ExceptionLogerUtils.getErrmessage(e));
         return ServerResponse.createByErrorMessage(e.getMessage());
     }

@@ -2,12 +2,12 @@ package com.inspur.system.security.filter;
 
 import com.inspur.constant.TokenConstant;
 import com.inspur.system.response.ResponseCode;
-import com.inspur.system.security.DO.SystemUser;
-import com.inspur.system.security.DO.SystemUserDetail;
-import com.inspur.system.security.token.JwtAuthenticationToken;
-import com.inspur.system.security.token.TokenRedisUtil;
-import com.inspur.system.utils.JwtTokenUtils;
-import com.inspur.utils.HttpResponseUtil;
+import com.inspur.system.login.DO.SystemUser;
+import com.inspur.system.login.DO.SystemUserDetail;
+import com.inspur.system.security.token.BO.JwtAuthenticationToken;
+import com.inspur.system.security.token.service.TokenRedisService;
+import com.inspur.system.security.token.utils.JwtTokenUtils;
+import com.inspur.utils.HttpResponseUtils;
 import io.jsonwebtoken.Claims;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -28,7 +28,7 @@ import java.util.Map;
  * 请求鉴权过滤器
  */
 public class JwtRequestAuthorizationFilter extends BasicAuthenticationFilter {
-    private TokenRedisUtil tokenRedisUtil;
+    private TokenRedisService tokenRedisUtil;
 
     private static List notFilterUrl = new ArrayList();
 
@@ -41,7 +41,7 @@ public class JwtRequestAuthorizationFilter extends BasicAuthenticationFilter {
         notFilterUrl.add("/user/pwd/retrieve");
     }
 
-    public JwtRequestAuthorizationFilter(AuthenticationManager authenticationManager, TokenRedisUtil tokenRedisUtil) {
+    public JwtRequestAuthorizationFilter(AuthenticationManager authenticationManager, TokenRedisService tokenRedisUtil) {
         super(authenticationManager);
         this.tokenRedisUtil = tokenRedisUtil;
     }
@@ -120,7 +120,7 @@ public class JwtRequestAuthorizationFilter extends BasicAuthenticationFilter {
         Map<String, String> infoMap = new HashMap<String, String>(2);
         infoMap.put("status", code + "");
         infoMap.put("msg", msg);
-        HttpResponseUtil.outputJsonMsg(response, infoMap);
+        HttpResponseUtils.outputJsonMsg(response, infoMap);
     }
 
     private void reLoginResponse(HttpServletResponse response, String msg, int code, int statusCode) throws IOException {
@@ -128,7 +128,7 @@ public class JwtRequestAuthorizationFilter extends BasicAuthenticationFilter {
         infoMap.put("status", code + "");
         infoMap.put("msg", msg);
         response.setStatus(statusCode);
-        HttpResponseUtil.outputJsonMsg(response, infoMap);
+        HttpResponseUtils.outputJsonMsg(response, infoMap);
     }
 
     /**

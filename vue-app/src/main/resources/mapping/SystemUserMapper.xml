@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.inspur.system.security.dao.SystemUserMapper">
-    <resultMap id="BaseResultMap" type="com.inspur.system.security.DO.SystemUser">
+    <resultMap id="BaseResultMap" type="com.inspur.system.login.DO.SystemUser">
         <result column="userId" property="userid" jdbcType="VARCHAR"/>
         <result column="userName" property="username" jdbcType="VARCHAR"/>
         <result column="userCaption" property="usercaption" jdbcType="VARCHAR"/>
@@ -9,13 +9,13 @@
         <result column="pwd" property="pwd" jdbcType="VARCHAR"/>
         <result column="email" property="email" jdbcType="VARCHAR"/>
     </resultMap>
-    <insert id="insert" parameterType="com.inspur.system.security.DO.SystemUser">
+    <insert id="insert" parameterType="com.inspur.system.login.DO.SystemUser">
       insert into systemuser (userId, userName, userCaption,
         phone, pwd, email)
       values (#{userid,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR}, #{usercaption,jdbcType=VARCHAR},
         #{phone,jdbcType=VARCHAR}, #{pwd,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR})
     </insert>
-    <insert id="insertSelective" parameterType="com.inspur.system.security.DO.SystemUser">
+    <insert id="insertSelective" parameterType="com.inspur.system.login.DO.SystemUser">
         insert into systemuser
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="userid != null">
@@ -58,11 +58,11 @@
             </if>
         </trim>
     </insert>
-    <select id="getUserByUserName" parameterType="String" resultType="com.inspur.system.security.DO.SystemUser">
+    <select id="getUserByUserName" parameterType="String" resultType="com.inspur.system.login.DO.SystemUser">
         select * from systemuser
         where userName=#{userName} or phone=#{userName}
     </select>
-    <select id="getUserByUserMail" parameterType="String" resultType="com.inspur.system.security.DO.SystemUser">
+    <select id="getUserByUserMail" parameterType="String" resultType="com.inspur.system.login.DO.SystemUser">
         select * from systemuser
         where email=#{userMail}
     </select>

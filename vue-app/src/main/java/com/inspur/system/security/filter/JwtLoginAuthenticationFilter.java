@@ -1,6 +1,6 @@
 package com.inspur.system.security.filter;
 
-import com.inspur.system.security.token.JwtAuthenticationToken;
+import com.inspur.system.security.token.BO.JwtAuthenticationToken;
 import org.springframework.lang.Nullable;
 import org.springframework.security.authentication.AuthenticationServiceException;
 import org.springframework.security.core.Authentication;

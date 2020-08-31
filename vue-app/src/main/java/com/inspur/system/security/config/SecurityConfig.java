@@ -2,7 +2,7 @@ package com.inspur.system.security.config;
 
 import com.inspur.system.security.filter.JwtLoginAuthenticationFilter;
 import com.inspur.system.security.filter.JwtRequestAuthorizationFilter;
-import com.inspur.system.security.token.TokenRedisUtil;
+import com.inspur.system.security.token.service.TokenRedisService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
@@ -54,7 +54,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
      * token工具类
      */
     @Autowired
-    private TokenRedisUtil tokenRedisUtil;
+    private TokenRedisService tokenRedisUtil;
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {

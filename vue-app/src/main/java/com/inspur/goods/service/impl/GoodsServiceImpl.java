@@ -4,7 +4,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.inspur.system.page.PO.PageRequest;
 import com.inspur.system.page.PO.PageResult;
-import com.inspur.system.page.util.PageUtils;
+import com.inspur.system.page.utils.PageUtils;
 import com.inspur.goods.DO.Goods;
 import com.inspur.goods.DO.GoodsQueryModel;
 import com.inspur.goods.dao.GoodsMapper;

@@ -2,7 +2,7 @@ package com.inspur.system.security.handler;
 
 import com.inspur.constant.TokenConstant;
 import com.inspur.system.response.ResponseCode;
-import com.inspur.utils.HttpResponseUtil;
+import com.inspur.utils.HttpResponseUtils;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler;
 import org.springframework.stereotype.Component;
@@ -26,6 +26,6 @@ public class JwtLoginAuthenticationFailureHandler extends SimpleUrlAuthenticatio
         } else {
             infoMap.put("msg", "未知原因");
         }
-        HttpResponseUtil.outputJsonMsg(response, infoMap);
+        HttpResponseUtils.outputJsonMsg(response, infoMap);
     }
 }
