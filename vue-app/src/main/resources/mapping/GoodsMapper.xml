@@ -3,13 +3,13 @@
 <mapper namespace="com.inspur.goods.dao.GoodsMapper">
     <resultMap id="BaseResultMap" type="com.inspur.goods.DO.Goods">
         <result column="id" property="id" jdbcType="VARCHAR"/>
-        <result column="goodsName" property="goodsname" jdbcType="VARCHAR"/>
-        <result column="goodsCode" property="goodscode" jdbcType="VARCHAR"/>
-        <result column="goodsSize" property="goodssize" jdbcType="VARCHAR"/>
-        <result column="salePrice" property="saleprice" jdbcType="REAL"/>
-        <result column="purchasePrice" property="purchaseprice" jdbcType="REAL"/>
+        <result column="goods_name" property="goodsName" jdbcType="VARCHAR"/>
+        <result column="goods_code" property="goodsCode" jdbcType="VARCHAR"/>
+        <result column="goods_size" property="goodsSize" jdbcType="VARCHAR"/>
+        <result column="sale_price" property="salePrice" jdbcType="REAL"/>
+        <result column="purchase_price" property="purchasePrice" jdbcType="REAL"/>
         <result column="size" property="size" jdbcType="INTEGER"/>
-        <result column="supplierId" property="supplierid" jdbcType="VARCHAR"/>
+        <result column="supplier_id" property="supplierId" jdbcType="VARCHAR"/>
     </resultMap>
 
     <resultMap id="entityResultMap" extends="BaseResultMap" type="com.inspur.goods.DO.Goods">
@@ -24,12 +24,12 @@
 
 
     <insert id="insert" parameterType="com.inspur.goods.DO.Goods">
-    insert into goods (id, goodsName, goodsCode, 
-      goodsSize, salePrice, purchasePrice, 
-      size, supplierId)
-    values (#{id,jdbcType=VARCHAR}, #{goodsname,jdbcType=VARCHAR}, #{goodscode,jdbcType=VARCHAR}, 
-      #{goodssize,jdbcType=VARCHAR}, #{saleprice,jdbcType=REAL}, #{purchaseprice,jdbcType=REAL}, 
-      #{size,jdbcType=INTEGER}, #{supplierid,jdbcType=VARCHAR})
+    insert into goods (id, goods_name, goods_code,
+      goods_size, sale_price, purchase_price,
+      size, supplier_id)
+    values (#{id,jdbcType=VARCHAR}, #{goodsName,jdbcType=VARCHAR}, #{goodsCode,jdbcType=VARCHAR},
+      #{goodsSize,jdbcType=VARCHAR}, #{salePrice,jdbcType=REAL}, #{purchasePrice,jdbcType=REAL},
+      #{size,jdbcType=INTEGER}, #{supplierId,jdbcType=VARCHAR})
   </insert>
     <insert id="insertSelective" parameterType="com.inspur.goods.DO.Goods">
         insert into goods
@@ -37,52 +37,52 @@
             <if test="id != null">
                 id,
             </if>
-            <if test="goodsname != null">
-                goodsName,
+            <if test="goodsName != null">
+                goods_name,
             </if>
-            <if test="goodscode != null">
-                goodsCode,
+            <if test="goodsCode != null">
+                goods_code,
             </if>
-            <if test="goodssize != null">
-                goodsSize,
+            <if test="goodsSize != null">
+                goods_size,
             </if>
-            <if test="saleprice != null">
-                salePrice,
+            <if test="salePrice != null">
+                sale_price,
             </if>
-            <if test="purchaseprice != null">
-                purchasePrice,
+            <if test="purchasePrice != null">
+                purchase_price,
             </if>
             <if test="size != null">
                 size,
             </if>
-            <if test="supplierid != null">
-                supplierId,
+            <if test="supplierId != null">
+                supplier_id,
             </if>
         </trim>
         <trim prefix="values (" suffix=")" suffixOverrides=",">
             <if test="id != null">
                 #{id,jdbcType=VARCHAR},
             </if>
-            <if test="goodsname != null">
-                #{goodsname,jdbcType=VARCHAR},
+            <if test="goodsName != null">
+                #{goodsName,jdbcType=VARCHAR},
             </if>
-            <if test="goodscode != null">
-                #{goodscode,jdbcType=VARCHAR},
+            <if test="goodsCode != null">
+                #{goodsCode,jdbcType=VARCHAR},
             </if>
-            <if test="goodssize != null">
-                #{goodssize,jdbcType=VARCHAR},
+            <if test="goodsSize != null">
+                #{goodsSize,jdbcType=VARCHAR},
             </if>
-            <if test="saleprice != null">
-                #{saleprice,jdbcType=REAL},
+            <if test="salePrice != null">
+                #{salePrice,jdbcType=REAL},
             </if>
-            <if test="purchaseprice != null">
-                #{purchaseprice,jdbcType=REAL},
+            <if test="purchasePrice != null">
+                #{purchasePrice,jdbcType=REAL},
             </if>
             <if test="size != null">
                 #{size,jdbcType=INTEGER},
             </if>
-            <if test="supplierid != null">
-                #{supplierid,jdbcType=VARCHAR},
+            <if test="supplierId != null">
+                #{supplierId,jdbcType=VARCHAR},
             </if>
         </trim>
     </insert>
@@ -90,31 +90,31 @@
     <update id="update" parameterType="com.inspur.goods.DO.Goods">
         UPDATE goods
         <trim prefix="set" suffixOverrides=",">
-            <if test="goodsname!=null">goodsname=#{goodsname,jdbcType=VARCHAR},</if>
-            <if test="goodscode!=null">goodscode=#{goodscode,jdbcType=VARCHAR},</if>
-            <if test="goodssize!=null">saleprice=#{saleprice,jdbcType=VARCHAR},</if>
-            <if test="saleprice!=null">saleprice=#{saleprice,jdbcType=REAL},</if>
-            <if test="purchaseprice!=null">purchaseprice=#{purchaseprice,jdbcType=REAL},</if>
+            <if test="goodsName!=null">goods_name=#{goodsName,jdbcType=VARCHAR},</if>
+            <if test="goodsCode!=null">goods_code=#{goodsCode,jdbcType=VARCHAR},</if>
+            <if test="goodsSize!=null">sale_price=#{goodsSize,jdbcType=VARCHAR},</if>
+            <if test="salePrice!=null">sale_price=#{salePrice,jdbcType=REAL},</if>
+            <if test="purchasePrice!=null">purchase_price=#{purchasePrice,jdbcType=REAL},</if>
             <if test="size!=null">size=#{size,jdbcType=INTEGER},</if>
-            <if test="supplierid!=null">supplierid=#{supplierid,jdbcType=VARCHAR},</if>
+            <if test="supplierId!=null">supplier_id=#{supplierId,jdbcType=VARCHAR},</if>
         </trim>
         WHERE id=#{id}
     </update>
 
     <select id="listGoods" resultMap="entityResultMap">
         select
-        a.id, a.goodsName, a.goodsCode,a.goodsSize, a.salePrice, a.purchasePrice, a.size, a.supplierId,
+        a.id, a.goods_name, a.goods_code,a.goods_size, a.sale_price, a.purchase_price, a.size, a.supplier_id,
         b.id post_id, b.supplier_name post_supplier_name, b.contact_person post_contact_person, b.phone post_phone,
         b.remark post_remark
-        from goods a,supplier b where a.supplierid=b.id
-        <if test="goodsname != null and goodsname != ''">
-            and a.goodsname = #{goodsname,jdbcType=VARCHAR}
+        from goods a,supplier b where a.supplier_id=b.id
+        <if test="goodsName != null and goodsName != ''">
+            and a.goods_name = #{goodsName,jdbcType=VARCHAR}
         </if>
-        <if test="goodscode != null and goodscode != ''">
-            and a.goodscode = #{goodscode,jdbcType=VARCHAR}
+        <if test="goodsCode != null and goodsCode != ''">
+            and a.goods_code = #{goodsCode,jdbcType=VARCHAR}
         </if>
-        <if test="supplierid != null and supplierid != ''">
-            and a.supplierid = #{supplierid,jdbcType=VARCHAR}
+        <if test="supplierId != null and supplierId != ''">
+            and a.supplier_id = #{supplierId,jdbcType=VARCHAR}
         </if>
     </select>
 
@@ -124,14 +124,14 @@
 
     <select id="getById" resultMap="entityResultMap">
         select
-        a.id, a.goodsName, a.goodsCode,a.goodsSize, a.salePrice, a.purchasePrice, a.size, a.supplierId,
+        a.id, a.goods_name, a.goods_code,a.goods_size, a.sale_price, a.purchase_price, a.size, a.supplier_id,
         b.id post_id, b.supplier_name post_supplier_name, b.contact_person post_contact_person, b.phone post_phone,
         b.remark post_remark
-        from goods a,supplier b where a.supplierid=b.id
+        from goods a,supplier b where a.supplier_id=b.id
 
-            <if test="id != null and id != ''">
-                and a.id =#{id}
-            </if>
+        <if test="id != null and id != ''">
+            and a.id =#{id}
+        </if>
 
     </select>
 </mapper>

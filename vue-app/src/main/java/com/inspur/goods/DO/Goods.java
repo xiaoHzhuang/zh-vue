@@ -5,19 +5,19 @@ import com.inspur.supplier.DO.Supplier;
 public class Goods {
     private String id;
 
-    private String goodsname;
+    private String goodsName;
 
-    private String goodscode;
+    private String goodsCode;
 
-    private String goodssize;
+    private String goodsSize;
 
-    private Float saleprice;
+    private Float salePrice;
 
-    private Float purchaseprice;
+    private Float purchasePrice;
 
     private Integer size;
 
-    private String supplierid;
+    private String supplierId;
 
     private Supplier supplier;
 
@@ -29,44 +29,44 @@ public class Goods {
         this.id = id == null ? null : id.trim();
     }
 
-    public String getGoodsname() {
-        return goodsname;
+    public String getGoodsName() {
+        return goodsName;
     }
 
-    public void setGoodsname(String goodsname) {
-        this.goodsname = goodsname == null ? null : goodsname.trim();
+    public void setGoodsName(String goodsName) {
+        this.goodsName = goodsName;
     }
 
-    public String getGoodscode() {
-        return goodscode;
+    public String getGoodsCode() {
+        return goodsCode;
     }
 
-    public void setGoodscode(String goodscode) {
-        this.goodscode = goodscode == null ? null : goodscode.trim();
+    public void setGoodsCode(String goodsCode) {
+        this.goodsCode = goodsCode;
     }
 
-    public String getGoodssize() {
-        return goodssize;
+    public String getGoodsSize() {
+        return goodsSize;
     }
 
-    public void setGoodssize(String goodssize) {
-        this.goodssize = goodssize == null ? null : goodssize.trim();
+    public void setGoodsSize(String goodsSize) {
+        this.goodsSize = goodsSize;
     }
 
-    public Float getSaleprice() {
-        return saleprice;
+    public Float getSalePrice() {
+        return salePrice;
     }
 
-    public void setSaleprice(Float saleprice) {
-        this.saleprice = saleprice;
+    public void setSalePrice(Float salePrice) {
+        this.salePrice = salePrice;
     }
 
-    public Float getPurchaseprice() {
-        return purchaseprice;
+    public Float getPurchasePrice() {
+        return purchasePrice;
     }
 
-    public void setPurchaseprice(Float purchaseprice) {
-        this.purchaseprice = purchaseprice;
+    public void setPurchasePrice(Float purchasePrice) {
+        this.purchasePrice = purchasePrice;
     }
 
     public Integer getSize() {
@@ -77,12 +77,12 @@ public class Goods {
         this.size = size;
     }
 
-    public String getSupplierid() {
-        return supplierid;
+    public String getSupplierId() {
+        return supplierId;
     }
 
-    public void setSupplierid(String supplierid) {
-        this.supplierid = supplierid == null ? null : supplierid.trim();
+    public void setSupplierId(String supplierId) {
+        this.supplierId = supplierId;
     }
 
     public Supplier getSupplier() {

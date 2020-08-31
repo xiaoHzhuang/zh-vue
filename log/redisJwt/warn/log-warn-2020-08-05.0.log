@@ -1,2 +1,0 @@
-2020-08-05 13:56:46.117 [http-nio-8085-exec-6] WARN  com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2020-08-05 14:46:14.511 [http-nio-8085-exec-1] WARN  com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.

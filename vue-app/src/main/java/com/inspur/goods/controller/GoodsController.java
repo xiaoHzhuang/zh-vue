@@ -42,12 +42,11 @@ public class GoodsController {
     }
 
     @RequestMapping("list/search/{pageNum}/{pageSize}")
-    public PageResult search(@PathVariable("pageNum") int pageNum, @PathVariable("pageSize") int pageSize, String goodsname, String goodscode, String supplierid) throws ParseException {
+    public PageResult search(@PathVariable("pageNum") int pageNum, @PathVariable("pageSize") int pageSize, String goodsName, String goodsCode, String supplierId) throws ParseException {
         PageRequest pageRequest = new PageRequest();
         pageRequest.setPageNum(pageNum);
         pageRequest.setPageSize(pageSize);
-
-        GoodsQueryModel goodsQueryModel = new GoodsQueryModel(goodsname, goodscode, supplierid);
+        GoodsQueryModel goodsQueryModel = new GoodsQueryModel(goodsName, goodsCode, supplierId);
         return goodsService.search(pageRequest, goodsQueryModel);
     }
 

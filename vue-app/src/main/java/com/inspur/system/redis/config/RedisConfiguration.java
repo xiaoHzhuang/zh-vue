@@ -5,16 +5,24 @@ import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.jsontype.impl.LaissezFaireSubTypeValidator;
 import com.inspur.constant.RedisConstant;
+import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.CachingConfigurerSupport;
+import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.cache.interceptor.KeyGenerator;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import org.springframework.data.redis.cache.RedisCacheConfiguration;
+import org.springframework.data.redis.cache.RedisCacheManager;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.core.*;
 import org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.RedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 import org.springframework.integration.redis.util.RedisLockRegistry;
+
+import java.lang.reflect.Method;
+import java.time.Duration;
 
 /**
  * @ClassName: RedisConfiguration
@@ -23,6 +31,7 @@ import org.springframework.integration.redis.util.RedisLockRegistry;
  * @date: 2019年7月1日 上午9:10:33
  */
 @Configuration
+@EnableCaching
 public class RedisConfiguration extends CachingConfigurerSupport {
     /**
      * 项目启动时此方法先被注册成bean被spring管理,
@@ -86,4 +95,33 @@ public class RedisConfiguration extends CachingConfigurerSupport {
         return new RedisLockRegistry(redisConnectionFactory, "lock", RedisConstant.DEFAULT_EXPIRE_UNUSED);
     }
 
+    //key的生成，springcache的内容，跟具体实现缓存器无关
+    //自定义本项目内的key的方式
+    @Bean
+    public KeyGenerator keyGenerator() {
+        return new KeyGenerator() {
+            @Override
+            public Object generate(Object target, Method method, Object... params) {
+                StringBuilder sb = new StringBuilder();
+                sb.append(target.getClass().getSimpleName());
+                sb.append(method.getName());
+                for (Object obj : params) {
+                    sb.append(obj.toString());
+                }
+                System.out.println("keyGenerator=" + sb.toString());
+                return sb.toString();
+            }
+        };
+    }
+
+    @Bean
+    public CacheManager cacheManager(RedisConnectionFactory connectionFactory) {
+        return RedisCacheManager
+                .builder(connectionFactory)
+                .cacheDefaults(
+                        RedisCacheConfiguration.defaultCacheConfig()
+                                .entryTtl(Duration.ofSeconds(20))) //缓存时间绝对过期时间20s
+                .transactionAware()
+                .build();
+    }
 }

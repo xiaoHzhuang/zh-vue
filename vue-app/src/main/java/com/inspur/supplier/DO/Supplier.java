@@ -1,6 +1,9 @@
 package com.inspur.supplier.DO;
 
-public class Supplier {
+import java.io.Serializable;
+
+public class Supplier implements Serializable {
+    private static final long serialVersionUID = 1L;
     private String id;
 
     private String supplierName;

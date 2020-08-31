@@ -8,39 +8,42 @@ package com.inspur.goods.DO;
  * Description:
  */
 public class GoodsQueryModel {
-    private String goodsname;
+    private String goodsName;
 
-    private String goodscode;
+    private String goodsCode;
 
-    private String supplierid;
+    private String supplierId;
 
-    public String getGoodsname() {
-        return goodsname;
+    public GoodsQueryModel(String goodsName, String goodsCode, String supplierId) {
+        this.goodsName = goodsName;
+        this.goodsCode = goodsCode;
+        this.supplierId = supplierId;
     }
 
-    public GoodsQueryModel(String goodsname, String goodscode, String supplierid) {
-        this.goodsname = goodsname;
-        this.goodscode = goodscode;
-        this.supplierid = supplierid;
+    public GoodsQueryModel() {
     }
 
-    public void setGoodsname(String goodsname) {
-        this.goodsname = goodsname;
+    public String getGoodsName() {
+        return goodsName;
     }
 
-    public String getGoodscode() {
-        return goodscode;
+    public void setGoodsName(String goodsName) {
+        this.goodsName = goodsName;
     }
 
-    public void setGoodscode(String goodscode) {
-        this.goodscode = goodscode;
+    public String getGoodsCode() {
+        return goodsCode;
     }
 
-    public String getSupplierid() {
-        return supplierid;
+    public void setGoodsCode(String goodsCode) {
+        this.goodsCode = goodsCode;
     }
 
-    public void setSupplierid(String supplierid) {
-        this.supplierid = supplierid;
+    public String getSupplierId() {
+        return supplierId;
+    }
+
+    public void setSupplierId(String supplierId) {
+        this.supplierId = supplierId;
     }
 }
