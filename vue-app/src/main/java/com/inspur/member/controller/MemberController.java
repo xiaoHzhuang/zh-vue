@@ -6,6 +6,10 @@ import com.inspur.member.DO.Member;
 import com.inspur.member.DO.MemberQueryModel;
 import com.inspur.member.service.IMemberService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheConfig;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,6 +30,7 @@ import java.util.Map;
  */
 @RestController
 @RequestMapping("member")
+@CacheConfig(cacheNames = "member")
 public class MemberController {
     @Autowired
     private IMemberService memberService;
@@ -46,11 +51,13 @@ public class MemberController {
     }
 
     @RequestMapping("get/{id}")
+    @Cacheable(key = "#id")
     public Member getMemberById(@PathVariable("id") String id) {
         return memberService.getMemberById(id);
     }
 
     @RequestMapping("detete/{id}")
+    @CacheEvict(key = "#id")
     public Map<String, String> deleteMemberById(@PathVariable("id") String id) {
         Map<String, String> rs = new HashMap<String, String>();
         try {
@@ -64,6 +71,7 @@ public class MemberController {
     }
 
     @RequestMapping("save")
+    @CachePut(key = "#member.id")
     public Map<String, String> saveMember(@RequestBody Member member) {
         Map<String, String> rs = new HashMap<String, String>();
         try {
@@ -75,6 +83,4 @@ public class MemberController {
         }
         return rs;
     }
-
-
 }

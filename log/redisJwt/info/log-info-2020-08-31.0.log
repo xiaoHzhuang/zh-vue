@@ -1,0 +1,940 @@
+2020-08-31 09:50:50.001 [restartedMain] INFO  com.inspur.VueAppApplication - Starting VueAppApplication on zhuanghuan00 with PID 12112 (E:\IDEA_PROJECT\zh-vue\vue-app\target\classes started by zhuanghuan in E:\IDEA_PROJECT\zh-vue)
+2020-08-31 09:50:50.027 [restartedMain] INFO  com.inspur.VueAppApplication - No active profile set, falling back to default profiles: default
+2020-08-31 09:50:50.639 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-31 09:50:50.640 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-31 09:50:54.441 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-08-31 09:50:54.457 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-08-31 09:50:54.626 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 87ms. Found 0 Redis repository interfaces.
+2020-08-31 09:50:55.940 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-08-31 09:50:55.977 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2020-08-31 09:50:56.016 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-08-31 09:50:56.553 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 09:50:56.583 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 09:50:56.586 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 09:50:57.252 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2020-08-31 09:50:57.270 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2020-08-31 09:50:57.272 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-31 09:50:57.272 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-08-31 09:50:57.480 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring embedded WebApplicationContext
+2020-08-31 09:50:57.481 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6840 ms
+2020-08-31 09:51:01.490 [restartedMain] INFO  com.inspur.executor.config.XxlJobConfig - >>>>>>>>>>> xxl-job config init.
+2020-08-31 09:51:01.874 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2020-08-31 09:51:02.009 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@723f7955, org.springframework.security.web.context.SecurityContextPersistenceFilter@27602afd, org.springframework.security.web.header.HeaderWriterFilter@213bbcd5, org.springframework.security.web.authentication.logout.LogoutFilter@2f1d34a3, com.inspur.system.security.filter.JwtLoginAuthenticationFilter@7c843a02, com.inspur.system.security.filter.JwtRequestAuthorizationFilter@c408e75, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@47c7a711, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67ba8a5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3fb8a3cc, org.springframework.security.web.session.SessionManagementFilter@bf9b307, org.springframework.security.web.access.ExceptionTranslationFilter@2c5d55ee, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4adffc1d]
+2020-08-31 09:51:02.446 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-31 09:51:04.013 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-08-31 09:51:04.320 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-08-31 09:51:04.479 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:shardingJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@22da8dea[class com.inspur.executor.handler.SampleXxlJob#shardingJobHandler]
+2020-08-31 09:51:04.480 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:commandJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@12138e07[class com.inspur.executor.handler.SampleXxlJob#commandJobHandler]
+2020-08-31 09:51:04.480 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@267ce72d[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-08-31 09:51:04.481 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler2, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@3f04a0f5[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler2]
+2020-08-31 09:51:04.481 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@4947df22[class com.inspur.executor.handler.SampleXxlJob#httpJobHandler]
+2020-08-31 09:51:05.195 [restartedMain] INFO  o.s.integration.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-08-31 09:51:05.196 [restartedMain] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application.errorChannel' has 1 subscriber(s).
+2020-08-31 09:51:05.196 [restartedMain] INFO  o.s.integration.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+2020-08-31 09:51:05.203 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2020-08-31 09:51:05.254 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path '/JwtVue'
+2020-08-31 09:51:05.292 [restartedMain] INFO  com.inspur.VueAppApplication - Started VueAppApplication in 17.116 seconds (JVM running for 20.775)
+2020-08-31 09:51:07.497 [Thread-255] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
+2020-08-31 09:51:30.689 [xxl-rpc, EmbedServer bizThreadPool-1442983527] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:5, handler:com.xxl.job.core.handler.impl.MethodJobHandler@267ce72d[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-08-31 09:52:53.152 [http-nio-8085-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-31 09:52:53.153 [http-nio-8085-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-31 09:52:53.168 [http-nio-8085-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+2020-08-31 09:52:53.318 [http-nio-8085-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-08-31 09:52:53.672 [http-nio-8085-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-08-31 13:21:04.989 [SpringContextShutdownHook] INFO  o.s.integration.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-08-31 13:21:04.991 [SpringContextShutdownHook] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application.errorChannel' has 0 subscriber(s).
+2020-08-31 13:21:04.992 [SpringContextShutdownHook] INFO  o.s.integration.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+2020-08-31 13:21:04.993 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2020-08-31 13:21:05.002 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-31 13:21:05.004 [Thread-255] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server stop.
+2020-08-31 13:21:06.013 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry-remove fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.30.3:9999/'}, registryResult:ReturnT [code=500, msg=xxl-rpc remoting error(Connection refused: connect), for url : http://127.0.0.1:8081/xxl-job-admin/api/registryRemove, content=null]
+2020-08-31 13:21:06.013 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job, executor registry thread destory.
+2020-08-31 13:21:06.014 [SpringContextShutdownHook] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server destroy success.
+2020-08-31 13:21:06.041 [Thread-263] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-263,10,main]
+2020-08-31 13:21:06.042 [xxl-job, executor JobLogFileCleanThread] INFO  com.xxl.job.core.thread.JobLogFileCleanThread - >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destory.
+2020-08-31 13:21:07.081 [xxl-job, executor TriggerCallbackThread] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor callback thread destory.
+2020-08-31 13:21:07.082 [Thread-254] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor retry callback thread destory.
+2020-08-31 13:21:07.362 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-08-31 13:21:07.398 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-08-31 13:56:30.444 [restartedMain] INFO  com.inspur.VueAppApplication - Starting VueAppApplication on zhuanghuan00 with PID 14516 (E:\IDEA_PROJECT\zh-vue\vue-app\target\classes started by zhuanghuan in E:\IDEA_PROJECT\zh-vue)
+2020-08-31 13:56:30.463 [restartedMain] INFO  com.inspur.VueAppApplication - No active profile set, falling back to default profiles: default
+2020-08-31 13:56:31.211 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-31 13:56:31.212 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-31 13:56:35.100 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-08-31 13:56:35.107 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-08-31 13:56:35.215 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76ms. Found 0 Redis repository interfaces.
+2020-08-31 13:56:36.187 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-08-31 13:56:36.267 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2020-08-31 13:56:36.286 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-08-31 13:56:36.566 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 13:56:36.583 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 13:56:36.587 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 13:56:37.890 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2020-08-31 13:56:37.916 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2020-08-31 13:56:37.929 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-31 13:56:37.944 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-08-31 13:56:38.444 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring embedded WebApplicationContext
+2020-08-31 13:56:38.446 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7226 ms
+2020-08-31 13:56:42.962 [restartedMain] INFO  com.inspur.executor.config.XxlJobConfig - >>>>>>>>>>> xxl-job config init.
+2020-08-31 13:56:43.418 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2020-08-31 13:56:43.608 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16179e72, org.springframework.security.web.context.SecurityContextPersistenceFilter@c302b3b, org.springframework.security.web.header.HeaderWriterFilter@277553fe, org.springframework.security.web.authentication.logout.LogoutFilter@65da6b28, com.inspur.system.security.filter.JwtLoginAuthenticationFilter@4137ee6e, com.inspur.system.security.filter.JwtRequestAuthorizationFilter@57a66444, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c38e103, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4171c85f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b4a6b26, org.springframework.security.web.session.SessionManagementFilter@10f7e70a, org.springframework.security.web.access.ExceptionTranslationFilter@43fe2f1f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1a9f9d04]
+2020-08-31 13:56:44.031 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-31 13:56:46.132 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-08-31 13:56:46.428 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-08-31 13:56:46.592 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@202a917d[class com.inspur.executor.handler.SampleXxlJob#httpJobHandler]
+2020-08-31 13:56:46.593 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@46e6d540[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-08-31 13:56:46.594 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler2, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@2ccc0839[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler2]
+2020-08-31 13:56:46.595 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:shardingJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@5610276c[class com.inspur.executor.handler.SampleXxlJob#shardingJobHandler]
+2020-08-31 13:56:46.595 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:commandJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@22c5f5aa[class com.inspur.executor.handler.SampleXxlJob#commandJobHandler]
+2020-08-31 13:56:47.123 [restartedMain] INFO  o.s.integration.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-08-31 13:56:47.123 [restartedMain] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application.errorChannel' has 1 subscriber(s).
+2020-08-31 13:56:47.128 [restartedMain] INFO  o.s.integration.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+2020-08-31 13:56:47.129 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2020-08-31 13:56:47.204 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path '/JwtVue'
+2020-08-31 13:56:47.245 [restartedMain] INFO  com.inspur.VueAppApplication - Started VueAppApplication in 21.462 seconds (JVM running for 26.539)
+2020-08-31 13:56:53.215 [Thread-253] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
+2020-08-31 13:57:10.330 [xxl-rpc, EmbedServer bizThreadPool-31655289] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:5, handler:com.xxl.job.core.handler.impl.MethodJobHandler@46e6d540[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-08-31 14:10:29.565 [http-nio-8085-exec-10] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-31 14:10:29.566 [http-nio-8085-exec-10] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-31 14:10:29.615 [http-nio-8085-exec-10] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 35 ms
+2020-08-31 14:10:32.241 [http-nio-8085-exec-10] INFO  c.i.s.s.filter.JwtRequestAuthorizationFilter - token已失效
+2020-08-31 14:10:45.663 [http-nio-8085-exec-8] INFO  c.i.s.s.filter.JwtRequestAuthorizationFilter - token已失效
+2020-08-31 14:10:48.929 [http-nio-8085-exec-7] INFO  c.i.s.s.filter.JwtRequestAuthorizationFilter - token已失效
+2020-08-31 14:10:51.233 [http-nio-8085-exec-5] INFO  c.i.s.s.filter.JwtRequestAuthorizationFilter - token已失效
+2020-08-31 14:10:55.815 [http-nio-8085-exec-6] INFO  c.i.s.s.filter.JwtRequestAuthorizationFilter - token已失效
+2020-08-31 14:12:28.395 [http-nio-8085-exec-4] INFO  c.i.s.s.filter.JwtRequestAuthorizationFilter - token已失效
+2020-08-31 14:12:31.837 [http-nio-8085-exec-2] INFO  c.i.s.s.filter.JwtRequestAuthorizationFilter - token已失效
+2020-08-31 14:12:58.039 [http-nio-8085-exec-3] INFO  c.i.s.s.filter.JwtRequestAuthorizationFilter - token已失效
+2020-08-31 14:13:19.966 [http-nio-8085-exec-1] INFO  c.i.s.s.filter.JwtRequestAuthorizationFilter - token已失效
+2020-08-31 14:16:26.422 [http-nio-8085-exec-10] INFO  c.i.s.s.filter.JwtRequestAuthorizationFilter - token已失效
+2020-08-31 14:16:44.118 [http-nio-8085-exec-8] INFO  c.i.s.s.filter.JwtRequestAuthorizationFilter - token已失效
+2020-08-31 14:18:00.347 [http-nio-8085-exec-7] INFO  c.i.s.s.filter.JwtRequestAuthorizationFilter - token已失效
+2020-08-31 14:18:17.603 [http-nio-8085-exec-5] INFO  c.i.s.s.filter.JwtRequestAuthorizationFilter - token已失效
+2020-08-31 14:18:29.425 [http-nio-8085-exec-6] INFO  c.i.s.s.filter.JwtRequestAuthorizationFilter - token已失效
+2020-08-31 14:18:56.203 [http-nio-8085-exec-4] INFO  c.i.s.s.filter.JwtRequestAuthorizationFilter - token已失效
+2020-08-31 14:19:29.630 [http-nio-8085-exec-2] INFO  c.i.s.s.filter.JwtRequestAuthorizationFilter - token已失效
+2020-08-31 14:20:50.829 [http-nio-8085-exec-3] INFO  c.i.s.s.filter.JwtRequestAuthorizationFilter - token已失效
+2020-08-31 14:20:54.988 [http-nio-8085-exec-1] INFO  c.i.s.s.filter.JwtRequestAuthorizationFilter - token已失效
+2020-08-31 14:21:10.257 [http-nio-8085-exec-10] INFO  c.i.s.s.filter.JwtRequestAuthorizationFilter - token已失效
+2020-08-31 14:22:16.062 [http-nio-8085-exec-9] INFO  c.i.s.s.filter.JwtRequestAuthorizationFilter - token已失效
+2020-08-31 14:22:56.587 [http-nio-8085-exec-8] INFO  c.i.s.s.filter.JwtRequestAuthorizationFilter - token已失效
+2020-08-31 14:23:49.661 [http-nio-8085-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-08-31 14:23:50.257 [http-nio-8085-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-08-31 14:48:00.506 [SpringContextShutdownHook] INFO  o.s.integration.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-08-31 14:48:00.507 [SpringContextShutdownHook] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application.errorChannel' has 0 subscriber(s).
+2020-08-31 14:48:00.508 [SpringContextShutdownHook] INFO  o.s.integration.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+2020-08-31 14:48:00.509 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2020-08-31 14:48:00.517 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-31 14:48:00.518 [Thread-253] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server stop.
+2020-08-31 14:48:00.536 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.30.3:9999/'}, registryResult:ReturnT [code=200, msg=null, content=null]
+2020-08-31 14:48:00.537 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job, executor registry thread destory.
+2020-08-31 14:48:00.537 [SpringContextShutdownHook] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server destroy success.
+2020-08-31 14:48:00.544 [Thread-261] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-261,10,main]
+2020-08-31 14:48:00.544 [xxl-job, executor JobLogFileCleanThread] INFO  com.xxl.job.core.thread.JobLogFileCleanThread - >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destory.
+2020-08-31 14:48:00.579 [xxl-job, executor TriggerCallbackThread] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor callback thread destory.
+2020-08-31 14:48:00.580 [Thread-252] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor retry callback thread destory.
+2020-08-31 14:48:00.753 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-08-31 14:48:00.784 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-08-31 14:48:39.220 [restartedMain] INFO  com.inspur.VueAppApplication - Starting VueAppApplication on zhuanghuan00 with PID 27300 (E:\IDEA_PROJECT\zh-vue\vue-app\target\classes started by zhuanghuan in E:\IDEA_PROJECT\zh-vue)
+2020-08-31 14:48:39.233 [restartedMain] INFO  com.inspur.VueAppApplication - No active profile set, falling back to default profiles: default
+2020-08-31 14:48:40.030 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-31 14:48:40.032 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-31 14:48:42.703 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-08-31 14:48:42.708 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-08-31 14:48:42.829 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 96ms. Found 0 Redis repository interfaces.
+2020-08-31 14:48:44.337 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-08-31 14:48:44.354 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2020-08-31 14:48:44.367 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-08-31 14:48:44.698 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cacheConfig' of type [com.inspur.system.redis.config.CacheConfig$$EnhancerBySpringCGLIB$$424b223b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 14:48:44.705 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfiguration' of type [com.inspur.system.redis.config.RedisConfiguration$$EnhancerBySpringCGLIB$$5b6730aa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 14:48:44.744 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-31 14:53:10.358 [restartedMain] INFO  com.inspur.VueAppApplication - Starting VueAppApplication on zhuanghuan00 with PID 25048 (E:\IDEA_PROJECT\zh-vue\vue-app\target\classes started by zhuanghuan in E:\IDEA_PROJECT\zh-vue)
+2020-08-31 14:53:10.374 [restartedMain] INFO  com.inspur.VueAppApplication - No active profile set, falling back to default profiles: default
+2020-08-31 14:53:11.105 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-31 14:53:11.105 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-31 14:53:16.839 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-08-31 14:53:16.846 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-08-31 14:53:16.956 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78ms. Found 0 Redis repository interfaces.
+2020-08-31 14:53:18.026 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-08-31 14:53:18.072 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2020-08-31 14:53:18.086 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-08-31 14:53:18.513 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 14:53:18.543 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 14:53:18.555 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 14:53:19.816 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2020-08-31 14:53:19.837 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2020-08-31 14:53:19.839 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-31 14:53:19.840 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-08-31 14:53:20.140 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring embedded WebApplicationContext
+2020-08-31 14:53:20.142 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 9035 ms
+2020-08-31 14:53:24.051 [restartedMain] INFO  com.inspur.executor.config.XxlJobConfig - >>>>>>>>>>> xxl-job config init.
+2020-08-31 14:53:24.467 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2020-08-31 14:53:24.596 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ee7faa2, org.springframework.security.web.context.SecurityContextPersistenceFilter@38fa1716, org.springframework.security.web.header.HeaderWriterFilter@784589e2, org.springframework.security.web.authentication.logout.LogoutFilter@21e60cc0, com.inspur.system.security.filter.JwtLoginAuthenticationFilter@64f2ae9d, com.inspur.system.security.filter.JwtRequestAuthorizationFilter@6c5e1743, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73b43b39, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@35048e32, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@48afe683, org.springframework.security.web.session.SessionManagementFilter@52f57cd5, org.springframework.security.web.access.ExceptionTranslationFilter@1bb51f2a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3269f145]
+2020-08-31 14:53:25.005 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-31 14:53:26.835 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-08-31 14:53:27.115 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-08-31 14:53:27.251 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:shardingJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@6771e890[class com.inspur.executor.handler.SampleXxlJob#shardingJobHandler]
+2020-08-31 14:53:27.256 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:commandJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@1c9fbe5e[class com.inspur.executor.handler.SampleXxlJob#commandJobHandler]
+2020-08-31 14:53:27.258 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@5d202c66[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-08-31 14:53:27.259 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@190ebc5b[class com.inspur.executor.handler.SampleXxlJob#httpJobHandler]
+2020-08-31 14:53:27.259 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler2, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@71d3e282[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler2]
+2020-08-31 14:53:27.706 [restartedMain] INFO  o.s.integration.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-08-31 14:53:27.718 [restartedMain] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application.errorChannel' has 1 subscriber(s).
+2020-08-31 14:53:27.719 [restartedMain] INFO  o.s.integration.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+2020-08-31 14:53:27.721 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2020-08-31 14:53:27.914 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path '/JwtVue'
+2020-08-31 14:53:28.084 [restartedMain] INFO  com.inspur.VueAppApplication - Started VueAppApplication in 21.509 seconds (JVM running for 25.956)
+2020-08-31 14:53:30.005 [Thread-253] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
+2020-08-31 14:53:31.053 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.30.3:9999/'}, registryResult:ReturnT [code=500, msg=xxl-rpc remoting error(Connection refused: connect), for url : http://127.0.0.1:8081/xxl-job-admin/api/registry, content=null]
+2020-08-31 14:53:56.976 [http-nio-8085-exec-9] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-31 14:53:56.977 [http-nio-8085-exec-9] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-31 14:53:56.993 [http-nio-8085-exec-9] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+2020-08-31 14:53:58.296 [http-nio-8085-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-08-31 14:53:59.416 [http-nio-8085-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-08-31 14:54:02.223 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.30.3:9999/'}, registryResult:ReturnT [code=500, msg=xxl-rpc remoting error(Connection refused: connect), for url : http://127.0.0.1:8081/xxl-job-admin/api/registry, content=null]
+2020-08-31 14:54:33.238 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.30.3:9999/'}, registryResult:ReturnT [code=500, msg=xxl-rpc remoting error(Connection refused: connect), for url : http://127.0.0.1:8081/xxl-job-admin/api/registry, content=null]
+2020-08-31 14:55:04.298 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.30.3:9999/'}, registryResult:ReturnT [code=500, msg=xxl-rpc remoting error(Connection refused: connect), for url : http://127.0.0.1:8081/xxl-job-admin/api/registry, content=null]
+2020-08-31 14:56:10.168 [xxl-rpc, EmbedServer bizThreadPool-1214121583] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:5, handler:com.xxl.job.core.handler.impl.MethodJobHandler@5d202c66[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-08-31 14:57:45.014 [restartedMain] INFO  com.inspur.VueAppApplication - Starting VueAppApplication on zhuanghuan00 with PID 24012 (E:\IDEA_PROJECT\zh-vue\vue-app\target\classes started by zhuanghuan in E:\IDEA_PROJECT\zh-vue)
+2020-08-31 14:57:45.030 [restartedMain] INFO  com.inspur.VueAppApplication - No active profile set, falling back to default profiles: default
+2020-08-31 14:57:45.792 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-31 14:57:45.793 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-31 14:57:48.382 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-08-31 14:57:48.388 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-08-31 14:57:48.492 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 74ms. Found 0 Redis repository interfaces.
+2020-08-31 14:57:49.870 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-08-31 14:57:49.910 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2020-08-31 14:57:49.925 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-08-31 14:57:50.292 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 14:57:50.313 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 14:57:50.319 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 14:57:51.311 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2020-08-31 14:57:51.326 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2020-08-31 14:57:51.330 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-31 14:57:51.331 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-08-31 14:57:51.600 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring embedded WebApplicationContext
+2020-08-31 14:57:51.601 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5803 ms
+2020-08-31 14:57:54.893 [restartedMain] INFO  com.inspur.executor.config.XxlJobConfig - >>>>>>>>>>> xxl-job config init.
+2020-08-31 14:57:55.253 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2020-08-31 14:57:55.373 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1da9a1b4, org.springframework.security.web.context.SecurityContextPersistenceFilter@620ec18f, org.springframework.security.web.header.HeaderWriterFilter@631031d6, org.springframework.security.web.authentication.logout.LogoutFilter@4dbc8432, com.inspur.system.security.filter.JwtLoginAuthenticationFilter@6f9ac7c, com.inspur.system.security.filter.JwtRequestAuthorizationFilter@daff626, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@774db33f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4cf15370, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7d8dc423, org.springframework.security.web.session.SessionManagementFilter@1c759f54, org.springframework.security.web.access.ExceptionTranslationFilter@4868ee95, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@384a39be]
+2020-08-31 14:57:55.649 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-31 14:57:56.890 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-08-31 14:57:57.065 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-08-31 14:57:57.165 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:shardingJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@5701adea[class com.inspur.executor.handler.SampleXxlJob#shardingJobHandler]
+2020-08-31 14:57:57.166 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:commandJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@53517cbb[class com.inspur.executor.handler.SampleXxlJob#commandJobHandler]
+2020-08-31 14:57:57.166 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@1cda9097[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-08-31 14:57:57.167 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@46ff2e21[class com.inspur.executor.handler.SampleXxlJob#httpJobHandler]
+2020-08-31 14:57:57.167 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler2, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@1ccbb5e9[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler2]
+2020-08-31 14:57:57.328 [restartedMain] INFO  o.s.integration.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-08-31 14:57:57.330 [restartedMain] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application.errorChannel' has 1 subscriber(s).
+2020-08-31 14:57:57.341 [restartedMain] INFO  o.s.integration.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+2020-08-31 14:57:57.343 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2020-08-31 14:57:58.605 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path '/JwtVue'
+2020-08-31 14:57:58.663 [restartedMain] INFO  com.inspur.VueAppApplication - Started VueAppApplication in 17.734 seconds (JVM running for 21.958)
+2020-08-31 14:58:00.557 [Thread-238] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
+2020-08-31 14:58:00.830 [xxl-rpc, EmbedServer bizThreadPool-724625265] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:5, handler:com.xxl.job.core.handler.impl.MethodJobHandler@1cda9097[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-08-31 14:58:16.969 [http-nio-8085-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-31 14:58:16.970 [http-nio-8085-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-31 14:58:16.992 [http-nio-8085-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 19 ms
+2020-08-31 14:58:18.190 [http-nio-8085-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-08-31 14:58:19.053 [http-nio-8085-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-08-31 15:01:51.396 [SpringContextShutdownHook] INFO  o.s.integration.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-08-31 15:01:51.397 [SpringContextShutdownHook] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application.errorChannel' has 0 subscriber(s).
+2020-08-31 15:01:51.397 [SpringContextShutdownHook] INFO  o.s.integration.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+2020-08-31 15:01:51.399 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2020-08-31 15:01:51.405 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-31 15:01:51.406 [Thread-238] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server stop.
+2020-08-31 15:01:51.427 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.30.3:9999/'}, registryResult:ReturnT [code=200, msg=null, content=null]
+2020-08-31 15:01:51.428 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job, executor registry thread destory.
+2020-08-31 15:01:51.428 [SpringContextShutdownHook] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server destroy success.
+2020-08-31 15:01:51.435 [Thread-244] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-244,10,main]
+2020-08-31 15:01:51.435 [xxl-job, executor JobLogFileCleanThread] INFO  com.xxl.job.core.thread.JobLogFileCleanThread - >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destory.
+2020-08-31 15:01:51.455 [xxl-job, executor TriggerCallbackThread] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor callback thread destory.
+2020-08-31 15:01:51.455 [Thread-237] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor retry callback thread destory.
+2020-08-31 15:01:51.581 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-08-31 15:01:51.615 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-08-31 15:02:12.492 [restartedMain] INFO  com.inspur.VueAppApplication - Starting VueAppApplication on zhuanghuan00 with PID 37508 (E:\IDEA_PROJECT\zh-vue\vue-app\target\classes started by zhuanghuan in E:\IDEA_PROJECT\zh-vue)
+2020-08-31 15:02:12.505 [restartedMain] INFO  com.inspur.VueAppApplication - No active profile set, falling back to default profiles: default
+2020-08-31 15:02:13.216 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-31 15:02:13.217 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-31 15:02:15.681 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-08-31 15:02:15.689 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-08-31 15:02:15.794 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 75ms. Found 0 Redis repository interfaces.
+2020-08-31 15:02:16.975 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-08-31 15:02:16.999 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2020-08-31 15:02:17.010 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-08-31 15:02:17.309 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfiguration' of type [com.inspur.system.redis.config.RedisConfiguration$$EnhancerBySpringCGLIB$$5359ac77] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 15:02:17.434 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 15:02:17.462 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 15:02:17.474 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 15:02:18.361 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2020-08-31 15:02:18.383 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2020-08-31 15:02:18.384 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-31 15:02:18.385 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-08-31 15:02:18.685 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring embedded WebApplicationContext
+2020-08-31 15:02:18.685 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5464 ms
+2020-08-31 15:02:22.060 [restartedMain] INFO  com.inspur.executor.config.XxlJobConfig - >>>>>>>>>>> xxl-job config init.
+2020-08-31 15:02:22.469 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2020-08-31 15:02:22.591 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@23120b9e, org.springframework.security.web.context.SecurityContextPersistenceFilter@70d39a43, org.springframework.security.web.header.HeaderWriterFilter@4518bd07, org.springframework.security.web.authentication.logout.LogoutFilter@19f7f9f0, com.inspur.system.security.filter.JwtLoginAuthenticationFilter@62bec871, com.inspur.system.security.filter.JwtRequestAuthorizationFilter@5ecfdc5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@707d5506, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29f92cc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@535d3371, org.springframework.security.web.session.SessionManagementFilter@4d59c5ab, org.springframework.security.web.access.ExceptionTranslationFilter@2de1242c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@723f8aeb]
+2020-08-31 15:02:22.981 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-31 15:02:24.518 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-08-31 15:02:24.956 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-08-31 15:02:25.127 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@777d216d[class com.inspur.executor.handler.SampleXxlJob#httpJobHandler]
+2020-08-31 15:02:25.129 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler2, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@32b26f29[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler2]
+2020-08-31 15:02:25.129 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@694cf924[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-08-31 15:02:25.130 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:shardingJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@ddfbfe6[class com.inspur.executor.handler.SampleXxlJob#shardingJobHandler]
+2020-08-31 15:02:25.130 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:commandJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@13b78179[class com.inspur.executor.handler.SampleXxlJob#commandJobHandler]
+2020-08-31 15:02:25.406 [restartedMain] INFO  o.s.integration.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-08-31 15:02:25.408 [restartedMain] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application.errorChannel' has 1 subscriber(s).
+2020-08-31 15:02:25.409 [restartedMain] INFO  o.s.integration.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+2020-08-31 15:02:25.412 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2020-08-31 15:02:25.527 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path '/JwtVue'
+2020-08-31 15:02:25.559 [restartedMain] INFO  com.inspur.VueAppApplication - Started VueAppApplication in 16.909 seconds (JVM running for 20.618)
+2020-08-31 15:02:28.671 [Thread-249] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
+2020-08-31 15:02:31.606 [http-nio-8085-exec-10] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-31 15:02:31.611 [http-nio-8085-exec-10] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-31 15:02:31.648 [http-nio-8085-exec-10] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 35 ms
+2020-08-31 15:02:32.982 [http-nio-8085-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-08-31 15:02:33.757 [http-nio-8085-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-08-31 15:02:40.173 [xxl-rpc, EmbedServer bizThreadPool-1022319837] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:5, handler:com.xxl.job.core.handler.impl.MethodJobHandler@694cf924[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-08-31 15:06:45.094 [Thread-242] INFO  o.s.integration.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-08-31 15:06:45.095 [Thread-242] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application.errorChannel' has 0 subscriber(s).
+2020-08-31 15:06:45.101 [Thread-242] INFO  o.s.integration.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+2020-08-31 15:06:45.103 [Thread-242] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2020-08-31 15:06:45.111 [Thread-242] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-31 15:06:45.115 [Thread-249] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server stop.
+2020-08-31 15:06:45.158 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.30.3:9999/'}, registryResult:ReturnT [code=200, msg=null, content=null]
+2020-08-31 15:06:45.159 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job, executor registry thread destory.
+2020-08-31 15:06:45.168 [Thread-242] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server destroy success.
+2020-08-31 15:06:45.185 [Thread-256] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-256,10,main]
+2020-08-31 15:06:45.188 [xxl-job, executor JobLogFileCleanThread] INFO  com.xxl.job.core.thread.JobLogFileCleanThread - >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destory.
+2020-08-31 15:06:45.215 [xxl-job, executor TriggerCallbackThread] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor callback thread destory.
+2020-08-31 15:06:45.216 [Thread-248] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor retry callback thread destory.
+2020-08-31 15:06:45.456 [Thread-242] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-08-31 15:06:45.513 [Thread-242] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-08-31 15:06:45.944 [restartedMain] INFO  com.inspur.VueAppApplication - Starting VueAppApplication on zhuanghuan00 with PID 37508 (E:\IDEA_PROJECT\zh-vue\vue-app\target\classes started by zhuanghuan in E:\IDEA_PROJECT\zh-vue)
+2020-08-31 15:06:45.944 [restartedMain] INFO  com.inspur.VueAppApplication - No active profile set, falling back to default profiles: default
+2020-08-31 15:06:48.814 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-08-31 15:06:48.815 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-08-31 15:06:48.926 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 103ms. Found 0 Redis repository interfaces.
+2020-08-31 15:06:49.262 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-08-31 15:06:49.262 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2020-08-31 15:06:49.269 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-08-31 15:06:49.315 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 15:06:49.318 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 15:06:49.319 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 15:06:49.657 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2020-08-31 15:06:49.660 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2020-08-31 15:06:49.660 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-31 15:06:49.661 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-08-31 15:06:49.742 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring embedded WebApplicationContext
+2020-08-31 15:06:49.743 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3792 ms
+2020-08-31 15:06:50.100 [restartedMain] INFO  org.apache.catalina.loader.WebappClassLoaderBase - Illegal access: this web application instance has been stopped already. Could not load [mapping/]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [mapping/]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1385)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1038)
+	at org.springframework.core.io.ClassPathResource.resolveURL(ClassPathResource.java:155)
+	at org.springframework.core.io.ClassPathResource.getURL(ClassPathResource.java:193)
+	at org.springframework.core.io.support.PathMatchingResourcePatternResolver.findPathMatchingResources(PathMatchingResourcePatternResolver.java:498)
+	at org.springframework.core.io.support.PathMatchingResourcePatternResolver.getResources(PathMatchingResourcePatternResolver.java:298)
+	at org.mybatis.spring.boot.autoconfigure.MybatisProperties.getResources(MybatisProperties.java:210)
+	at org.mybatis.spring.boot.autoconfigure.MybatisProperties.lambda$resolveMapperLocations$0(MybatisProperties.java:205)
+	at java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:269)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:546)
+	at java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:505)
+	at org.mybatis.spring.boot.autoconfigure.MybatisProperties.resolveMapperLocations(MybatisProperties.java:205)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:161)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$9063708b.CGLIB$sqlSessionFactory$0(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$9063708b$$FastClassBySpringCGLIB$$3a476c05.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$9063708b.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1306)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1511)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1406)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1306)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1226)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1306)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1226)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1306)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1226)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:174)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:169)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:154)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:86)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:253)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:53)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5136)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:841)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:468)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:437)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:191)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:176)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:158)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.inspur.VueAppApplication.main(VueAppApplication.java:9)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2020-08-31 15:06:50.113 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-08-31 15:06:50.130 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-31 15:07:25.240 [restartedMain] INFO  com.inspur.VueAppApplication - Starting VueAppApplication on zhuanghuan00 with PID 25516 (E:\IDEA_PROJECT\zh-vue\vue-app\target\classes started by zhuanghuan in E:\IDEA_PROJECT\zh-vue)
+2020-08-31 15:07:25.279 [restartedMain] INFO  com.inspur.VueAppApplication - No active profile set, falling back to default profiles: default
+2020-08-31 15:07:26.509 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-31 15:07:26.514 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-31 15:07:30.188 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-08-31 15:07:30.192 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-08-31 15:07:30.294 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 74ms. Found 0 Redis repository interfaces.
+2020-08-31 15:07:32.614 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-08-31 15:07:32.638 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2020-08-31 15:07:32.658 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-08-31 15:07:33.122 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfiguration' of type [com.inspur.system.redis.config.RedisConfiguration$$EnhancerBySpringCGLIB$$c8acc9e4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 15:07:33.251 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 15:07:33.286 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 15:07:33.293 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 15:07:34.786 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2020-08-31 15:07:34.824 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2020-08-31 15:07:34.825 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-31 15:07:34.826 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-08-31 15:07:35.171 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring embedded WebApplicationContext
+2020-08-31 15:07:35.172 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 8643 ms
+2020-08-31 15:07:39.376 [restartedMain] INFO  com.inspur.executor.config.XxlJobConfig - >>>>>>>>>>> xxl-job config init.
+2020-08-31 15:07:40.173 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2020-08-31 15:07:40.439 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5fa32d99, org.springframework.security.web.context.SecurityContextPersistenceFilter@4590c5ee, org.springframework.security.web.header.HeaderWriterFilter@277c7984, org.springframework.security.web.authentication.logout.LogoutFilter@14337647, com.inspur.system.security.filter.JwtLoginAuthenticationFilter@24cf47c4, com.inspur.system.security.filter.JwtRequestAuthorizationFilter@de8353f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1f71ddf3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a2c26a0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@323e842f, org.springframework.security.web.session.SessionManagementFilter@48399dc3, org.springframework.security.web.access.ExceptionTranslationFilter@4ccee92a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@24f1832]
+2020-08-31 15:07:40.903 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-31 15:07:42.541 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-08-31 15:07:42.923 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-08-31 15:07:43.020 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler2, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@254a26a8[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler2]
+2020-08-31 15:07:43.023 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@2aaa8d29[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-08-31 15:07:43.024 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@1ec5fab1[class com.inspur.executor.handler.SampleXxlJob#httpJobHandler]
+2020-08-31 15:07:43.025 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:commandJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@714b5812[class com.inspur.executor.handler.SampleXxlJob#commandJobHandler]
+2020-08-31 15:07:43.026 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:shardingJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@5c04ff5[class com.inspur.executor.handler.SampleXxlJob#shardingJobHandler]
+2020-08-31 15:07:43.367 [restartedMain] INFO  o.s.integration.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-08-31 15:07:43.369 [restartedMain] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application.errorChannel' has 1 subscriber(s).
+2020-08-31 15:07:43.370 [restartedMain] INFO  o.s.integration.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+2020-08-31 15:07:43.403 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2020-08-31 15:07:43.569 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path '/JwtVue'
+2020-08-31 15:07:43.664 [restartedMain] INFO  com.inspur.VueAppApplication - Started VueAppApplication in 24.709 seconds (JVM running for 28.984)
+2020-08-31 15:07:46.947 [Thread-264] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
+2020-08-31 15:08:10.190 [xxl-rpc, EmbedServer bizThreadPool-223660557] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:5, handler:com.xxl.job.core.handler.impl.MethodJobHandler@2aaa8d29[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-08-31 15:10:55.567 [http-nio-8085-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-31 15:10:55.568 [http-nio-8085-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-31 15:10:55.591 [http-nio-8085-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 23 ms
+2020-08-31 15:10:56.801 [http-nio-8085-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-08-31 15:10:57.672 [http-nio-8085-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-08-31 15:11:47.572 [SpringContextShutdownHook] INFO  o.s.integration.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-08-31 15:11:47.573 [SpringContextShutdownHook] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application.errorChannel' has 0 subscriber(s).
+2020-08-31 15:11:47.574 [SpringContextShutdownHook] INFO  o.s.integration.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+2020-08-31 15:11:47.575 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2020-08-31 15:11:47.581 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-31 15:11:47.582 [Thread-264] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server stop.
+2020-08-31 15:11:47.602 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.30.3:9999/'}, registryResult:ReturnT [code=200, msg=null, content=null]
+2020-08-31 15:11:47.602 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job, executor registry thread destory.
+2020-08-31 15:11:47.603 [SpringContextShutdownHook] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server destroy success.
+2020-08-31 15:11:47.609 [Thread-271] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-271,10,main]
+2020-08-31 15:11:47.610 [xxl-job, executor JobLogFileCleanThread] INFO  com.xxl.job.core.thread.JobLogFileCleanThread - >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destory.
+2020-08-31 15:11:47.623 [xxl-job, executor TriggerCallbackThread] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor callback thread destory.
+2020-08-31 15:11:47.624 [Thread-263] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor retry callback thread destory.
+2020-08-31 15:11:47.749 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-08-31 15:11:47.784 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-08-31 15:12:07.824 [restartedMain] INFO  com.inspur.VueAppApplication - Starting VueAppApplication on zhuanghuan00 with PID 36404 (E:\IDEA_PROJECT\zh-vue\vue-app\target\classes started by zhuanghuan in E:\IDEA_PROJECT\zh-vue)
+2020-08-31 15:12:07.831 [restartedMain] INFO  com.inspur.VueAppApplication - No active profile set, falling back to default profiles: default
+2020-08-31 15:12:08.364 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-08-31 15:12:08.365 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-08-31 15:12:10.387 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-08-31 15:12:10.392 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-08-31 15:12:10.481 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60ms. Found 0 Redis repository interfaces.
+2020-08-31 15:12:11.219 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-08-31 15:12:11.240 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2020-08-31 15:12:11.251 [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-08-31 15:12:11.541 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfiguration' of type [com.inspur.system.redis.config.RedisConfiguration$$EnhancerBySpringCGLIB$$99eb64c4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 15:12:11.618 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 15:12:11.637 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 15:12:11.643 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 15:12:12.321 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2020-08-31 15:12:12.338 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2020-08-31 15:12:12.340 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-31 15:12:12.340 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-08-31 15:12:12.629 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring embedded WebApplicationContext
+2020-08-31 15:12:12.629 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4263 ms
+2020-08-31 15:12:15.142 [restartedMain] INFO  com.inspur.executor.config.XxlJobConfig - >>>>>>>>>>> xxl-job config init.
+2020-08-31 15:12:15.320 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2020-08-31 15:12:15.385 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@140a3772, org.springframework.security.web.context.SecurityContextPersistenceFilter@31822c7f, org.springframework.security.web.header.HeaderWriterFilter@63147683, org.springframework.security.web.authentication.logout.LogoutFilter@4929c996, com.inspur.system.security.filter.JwtLoginAuthenticationFilter@74c59325, com.inspur.system.security.filter.JwtRequestAuthorizationFilter@8259ec1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@17897287, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ad684b8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@55981123, org.springframework.security.web.session.SessionManagementFilter@798fa155, org.springframework.security.web.access.ExceptionTranslationFilter@7cfcce3b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@587662f]
+2020-08-31 15:12:15.668 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-31 15:12:16.642 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-08-31 15:12:16.879 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-08-31 15:12:16.965 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:shardingJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@31f06802[class com.inspur.executor.handler.SampleXxlJob#shardingJobHandler]
+2020-08-31 15:12:16.967 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:commandJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@4572ae91[class com.inspur.executor.handler.SampleXxlJob#commandJobHandler]
+2020-08-31 15:12:16.968 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler2, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@72a1191d[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler2]
+2020-08-31 15:12:16.969 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@71aec287[class com.inspur.executor.handler.SampleXxlJob#httpJobHandler]
+2020-08-31 15:12:16.969 [restartedMain] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@43ac14c8[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-08-31 15:12:17.148 [restartedMain] INFO  o.s.integration.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-08-31 15:12:17.149 [restartedMain] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application.errorChannel' has 1 subscriber(s).
+2020-08-31 15:12:17.150 [restartedMain] INFO  o.s.integration.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+2020-08-31 15:12:17.151 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2020-08-31 15:12:17.285 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path '/JwtVue'
+2020-08-31 15:12:17.328 [restartedMain] INFO  com.inspur.VueAppApplication - Started VueAppApplication in 11.879 seconds (JVM running for 15.238)
+2020-08-31 15:12:19.744 [Thread-246] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
+2020-08-31 15:12:40.170 [xxl-rpc, EmbedServer bizThreadPool-994135203] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:5, handler:com.xxl.job.core.handler.impl.MethodJobHandler@43ac14c8[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-08-31 15:13:54.518 [http-nio-8085-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-31 15:13:54.518 [http-nio-8085-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-31 15:13:54.541 [http-nio-8085-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 22 ms
+2020-08-31 15:13:55.672 [http-nio-8085-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-08-31 15:13:56.094 [http-nio-8085-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-08-31 15:17:30.017 [SpringContextShutdownHook] INFO  o.s.integration.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-08-31 15:17:30.018 [SpringContextShutdownHook] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application.errorChannel' has 0 subscriber(s).
+2020-08-31 15:17:30.019 [SpringContextShutdownHook] INFO  o.s.integration.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+2020-08-31 15:17:30.020 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2020-08-31 15:17:30.031 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-31 15:17:30.033 [Thread-246] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server stop.
+2020-08-31 15:17:30.057 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.30.3:9999/'}, registryResult:ReturnT [code=200, msg=null, content=null]
+2020-08-31 15:17:30.061 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job, executor registry thread destory.
+2020-08-31 15:17:30.062 [SpringContextShutdownHook] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server destroy success.
+2020-08-31 15:17:30.069 [Thread-254] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-254,10,main]
+2020-08-31 15:17:30.073 [xxl-job, executor JobLogFileCleanThread] INFO  com.xxl.job.core.thread.JobLogFileCleanThread - >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destory.
+2020-08-31 15:17:30.084 [xxl-job, executor TriggerCallbackThread] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor callback thread destory.
+2020-08-31 15:17:30.085 [Thread-245] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor retry callback thread destory.
+2020-08-31 15:17:30.235 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-08-31 15:17:30.296 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-08-31 15:18:17.919 [main] INFO  com.inspur.VueAppApplication - Starting VueAppApplication on zhuanghuan00 with PID 35952 (E:\IDEA_PROJECT\zh-vue\vue-app\target\classes started by zhuanghuan in E:\IDEA_PROJECT\zh-vue)
+2020-08-31 15:18:17.938 [main] INFO  com.inspur.VueAppApplication - No active profile set, falling back to default profiles: default
+2020-08-31 15:18:21.672 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-08-31 15:18:21.677 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-08-31 15:18:21.806 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 89ms. Found 0 Redis repository interfaces.
+2020-08-31 15:18:23.395 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-08-31 15:18:23.419 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2020-08-31 15:18:23.433 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-08-31 15:18:23.870 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfiguration' of type [com.inspur.system.redis.config.RedisConfiguration$$EnhancerBySpringCGLIB$$fb0ab46d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 15:18:24.044 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 15:18:24.075 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 15:18:24.081 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 15:18:25.295 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2020-08-31 15:18:25.315 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2020-08-31 15:18:25.317 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-31 15:18:25.318 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-08-31 15:18:25.671 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring embedded WebApplicationContext
+2020-08-31 15:18:25.672 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6778 ms
+2020-08-31 15:18:29.706 [main] INFO  com.inspur.executor.config.XxlJobConfig - >>>>>>>>>>> xxl-job config init.
+2020-08-31 15:18:30.212 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2020-08-31 15:18:30.373 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@41582899, org.springframework.security.web.context.SecurityContextPersistenceFilter@7dd91ffc, org.springframework.security.web.header.HeaderWriterFilter@5817f1ca, org.springframework.security.web.authentication.logout.LogoutFilter@33ebe4f0, com.inspur.system.security.filter.JwtLoginAuthenticationFilter@66d3b881, com.inspur.system.security.filter.JwtRequestAuthorizationFilter@240a2619, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ad847f8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@74eec640, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@595814a1, org.springframework.security.web.session.SessionManagementFilter@726a8729, org.springframework.security.web.access.ExceptionTranslationFilter@4fe2dd02, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5c5c7cc4]
+2020-08-31 15:18:30.750 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-31 15:18:32.800 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-08-31 15:18:32.950 [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@62360a68[class com.inspur.executor.handler.SampleXxlJob#httpJobHandler]
+2020-08-31 15:18:32.954 [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@1450ffa3[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-08-31 15:18:32.955 [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler2, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@4e756867[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler2]
+2020-08-31 15:18:32.957 [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:commandJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@38ebc866[class com.inspur.executor.handler.SampleXxlJob#commandJobHandler]
+2020-08-31 15:18:32.957 [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:shardingJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@6adcf059[class com.inspur.executor.handler.SampleXxlJob#shardingJobHandler]
+2020-08-31 15:18:33.206 [main] INFO  o.s.integration.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-08-31 15:18:33.206 [main] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application.errorChannel' has 1 subscriber(s).
+2020-08-31 15:18:33.207 [main] INFO  o.s.integration.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+2020-08-31 15:18:33.207 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2020-08-31 15:18:33.390 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path '/JwtVue'
+2020-08-31 15:18:33.471 [main] INFO  com.inspur.VueAppApplication - Started VueAppApplication in 21.037 seconds (JVM running for 25.107)
+2020-08-31 15:18:36.649 [Thread-234] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
+2020-08-31 15:18:49.438 [http-nio-8085-exec-10] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-31 15:18:49.438 [http-nio-8085-exec-10] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-31 15:18:49.465 [http-nio-8085-exec-10] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 26 ms
+2020-08-31 15:18:51.081 [http-nio-8085-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-08-31 15:18:51.986 [http-nio-8085-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-08-31 15:19:07.521 [SpringContextShutdownHook] INFO  o.s.integration.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-08-31 15:19:07.612 [SpringContextShutdownHook] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application.errorChannel' has 0 subscriber(s).
+2020-08-31 15:19:07.613 [SpringContextShutdownHook] INFO  o.s.integration.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+2020-08-31 15:19:07.853 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2020-08-31 15:19:07.859 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-31 15:19:07.860 [Thread-234] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server stop.
+2020-08-31 15:19:08.059 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry-remove fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.30.3:9999/'}, registryResult:ReturnT [code=500, msg=xxl-rpc remoting error(Software caused connection abort: recv failed), for url : http://127.0.0.1:8081/xxl-job-admin/api/registryRemove, content=null]
+2020-08-31 15:19:08.060 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job, executor registry thread destory.
+2020-08-31 15:19:08.060 [SpringContextShutdownHook] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server destroy success.
+2020-08-31 15:19:08.060 [xxl-job, executor JobLogFileCleanThread] INFO  com.xxl.job.core.thread.JobLogFileCleanThread - >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destory.
+2020-08-31 15:19:08.061 [xxl-job, executor TriggerCallbackThread] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor callback thread destory.
+2020-08-31 15:19:08.061 [Thread-233] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor retry callback thread destory.
+2020-08-31 15:19:08.201 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-08-31 15:19:08.242 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-08-31 16:01:27.051 [main] INFO  com.inspur.VueAppApplication - Starting VueAppApplication on zhuanghuan00 with PID 38044 (E:\IDEA_PROJECT\zh-vue\vue-app\target\classes started by zhuanghuan in E:\IDEA_PROJECT\zh-vue)
+2020-08-31 16:01:27.103 [main] INFO  com.inspur.VueAppApplication - No active profile set, falling back to default profiles: default
+2020-08-31 16:01:31.188 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-08-31 16:01:31.203 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-08-31 16:01:31.408 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 159ms. Found 0 Redis repository interfaces.
+2020-08-31 16:01:33.981 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-08-31 16:01:34.000 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2020-08-31 16:01:34.014 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-08-31 16:01:34.554 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfiguration' of type [com.inspur.system.redis.config.RedisConfiguration$$EnhancerBySpringCGLIB$$990b3495] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 16:01:34.869 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 16:01:34.912 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 16:01:34.918 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 16:01:36.830 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2020-08-31 16:01:36.876 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2020-08-31 16:01:36.884 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-31 16:01:36.888 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-08-31 16:01:37.495 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring embedded WebApplicationContext
+2020-08-31 16:01:37.498 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 9417 ms
+2020-08-31 16:01:43.076 [main] INFO  com.inspur.executor.config.XxlJobConfig - >>>>>>>>>>> xxl-job config init.
+2020-08-31 16:01:43.712 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2020-08-31 16:01:43.941 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52a67293, org.springframework.security.web.context.SecurityContextPersistenceFilter@645dc557, org.springframework.security.web.header.HeaderWriterFilter@64b73e0a, org.springframework.security.web.authentication.logout.LogoutFilter@bd4ee01, com.inspur.system.security.filter.JwtLoginAuthenticationFilter@1471b98d, com.inspur.system.security.filter.JwtRequestAuthorizationFilter@935d3f9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@17884d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@66298fe9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@793cef95, org.springframework.security.web.session.SessionManagementFilter@3b57f915, org.springframework.security.web.access.ExceptionTranslationFilter@3a3ad8e7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@27dbaa33]
+2020-08-31 16:01:44.312 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-31 16:01:46.797 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-08-31 16:01:46.949 [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:shardingJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@702b656a[class com.inspur.executor.handler.SampleXxlJob#shardingJobHandler]
+2020-08-31 16:01:46.955 [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:commandJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@528f5b7f[class com.inspur.executor.handler.SampleXxlJob#commandJobHandler]
+2020-08-31 16:01:46.956 [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler2, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@3ccfac29[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler2]
+2020-08-31 16:01:46.957 [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@5c41b8d8[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-08-31 16:01:46.957 [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@77ea960f[class com.inspur.executor.handler.SampleXxlJob#httpJobHandler]
+2020-08-31 16:01:47.281 [main] INFO  o.s.integration.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-08-31 16:01:47.282 [main] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application.errorChannel' has 1 subscriber(s).
+2020-08-31 16:01:47.282 [main] INFO  o.s.integration.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+2020-08-31 16:01:47.283 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2020-08-31 16:01:47.504 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path '/JwtVue'
+2020-08-31 16:01:47.753 [main] INFO  com.inspur.VueAppApplication - Started VueAppApplication in 26.222 seconds (JVM running for 33.631)
+2020-08-31 16:01:52.290 [Thread-252] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
+2020-08-31 16:01:53.541 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.30.3:9999/'}, registryResult:ReturnT [code=500, msg=xxl-rpc remoting error(Connection refused: connect), for url : http://127.0.0.1:8081/xxl-job-admin/api/registry, content=null]
+2020-08-31 16:02:24.549 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.30.3:9999/'}, registryResult:ReturnT [code=500, msg=xxl-rpc remoting error(Connection refused: connect), for url : http://127.0.0.1:8081/xxl-job-admin/api/registry, content=null]
+2020-08-31 16:02:55.552 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.30.3:9999/'}, registryResult:ReturnT [code=500, msg=xxl-rpc remoting error(Connection refused: connect), for url : http://127.0.0.1:8081/xxl-job-admin/api/registry, content=null]
+2020-08-31 16:03:26.555 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.30.3:9999/'}, registryResult:ReturnT [code=500, msg=xxl-rpc remoting error(Connection refused: connect), for url : http://127.0.0.1:8081/xxl-job-admin/api/registry, content=null]
+2020-08-31 16:03:57.659 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.30.3:9999/'}, registryResult:ReturnT [code=500, msg=xxl-rpc remoting error(Connection refused: connect), for url : http://127.0.0.1:8081/xxl-job-admin/api/registry, content=null]
+2020-08-31 16:04:28.664 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.30.3:9999/'}, registryResult:ReturnT [code=500, msg=xxl-rpc remoting error(Connection refused: connect), for url : http://127.0.0.1:8081/xxl-job-admin/api/registry, content=null]
+2020-08-31 16:04:59.781 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.30.3:9999/'}, registryResult:ReturnT [code=500, msg=xxl-rpc remoting error(Connection refused: connect), for url : http://127.0.0.1:8081/xxl-job-admin/api/registry, content=null]
+2020-08-31 16:05:50.270 [xxl-rpc, EmbedServer bizThreadPool-2059518287] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:5, handler:com.xxl.job.core.handler.impl.MethodJobHandler@5c41b8d8[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-08-31 16:07:37.121 [http-nio-8085-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-31 16:07:37.122 [http-nio-8085-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-31 16:07:37.154 [http-nio-8085-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 20 ms
+2020-08-31 16:07:38.795 [http-nio-8085-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-08-31 16:07:39.687 [http-nio-8085-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-08-31 16:15:54.630 [SpringContextShutdownHook] INFO  o.s.integration.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-08-31 16:15:54.631 [SpringContextShutdownHook] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application.errorChannel' has 0 subscriber(s).
+2020-08-31 16:15:54.632 [SpringContextShutdownHook] INFO  o.s.integration.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+2020-08-31 16:15:54.634 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2020-08-31 16:15:54.639 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-31 16:15:54.640 [Thread-252] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server stop.
+2020-08-31 16:15:54.668 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.30.3:9999/'}, registryResult:ReturnT [code=200, msg=null, content=null]
+2020-08-31 16:15:54.668 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job, executor registry thread destory.
+2020-08-31 16:15:54.668 [SpringContextShutdownHook] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server destroy success.
+2020-08-31 16:15:54.675 [Thread-260] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-260,10,main]
+2020-08-31 16:15:54.675 [xxl-job, executor JobLogFileCleanThread] INFO  com.xxl.job.core.thread.JobLogFileCleanThread - >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destory.
+2020-08-31 16:15:54.702 [xxl-job, executor TriggerCallbackThread] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor callback thread destory.
+2020-08-31 16:15:54.704 [Thread-251] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor retry callback thread destory.
+2020-08-31 16:15:54.845 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-08-31 16:15:54.879 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-08-31 16:17:16.590 [main] INFO  com.inspur.VueAppApplication - Starting VueAppApplication on zhuanghuan00 with PID 19596 (E:\IDEA_PROJECT\zh-vue\vue-app\target\classes started by zhuanghuan in E:\IDEA_PROJECT\zh-vue)
+2020-08-31 16:17:16.616 [main] INFO  com.inspur.VueAppApplication - No active profile set, falling back to default profiles: default
+2020-08-31 16:17:20.416 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-08-31 16:17:20.424 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-08-31 16:17:20.567 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 96ms. Found 0 Redis repository interfaces.
+2020-08-31 16:17:22.629 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-08-31 16:17:22.718 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2020-08-31 16:17:22.755 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-08-31 16:17:23.348 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfiguration' of type [com.inspur.system.redis.config.RedisConfiguration$$EnhancerBySpringCGLIB$$c8167a1c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 16:17:23.537 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 16:17:23.592 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 16:17:23.600 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 16:17:25.200 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2020-08-31 16:17:25.250 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2020-08-31 16:17:25.252 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-31 16:17:25.253 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-08-31 16:17:25.743 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring embedded WebApplicationContext
+2020-08-31 16:17:25.743 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7978 ms
+2020-08-31 16:17:29.966 [main] INFO  com.inspur.executor.config.XxlJobConfig - >>>>>>>>>>> xxl-job config init.
+2020-08-31 16:17:30.282 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2020-08-31 16:17:30.412 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6736f40f, org.springframework.security.web.context.SecurityContextPersistenceFilter@6e9a10cd, org.springframework.security.web.header.HeaderWriterFilter@27896d3b, org.springframework.security.web.authentication.logout.LogoutFilter@15d65fcf, com.inspur.system.security.filter.JwtLoginAuthenticationFilter@63124022, com.inspur.system.security.filter.JwtRequestAuthorizationFilter@611c3eae, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@59b447a4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@79ad1774, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12f9f896, org.springframework.security.web.session.SessionManagementFilter@6f3b13d0, org.springframework.security.web.access.ExceptionTranslationFilter@1999149e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7c3c453b]
+2020-08-31 16:17:30.803 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-31 16:17:32.044 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-08-31 16:17:32.170 [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@69bc4024[class com.inspur.executor.handler.SampleXxlJob#httpJobHandler]
+2020-08-31 16:17:32.170 [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@3578a45b[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-08-31 16:17:32.193 [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler2, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@24f177f5[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler2]
+2020-08-31 16:17:32.194 [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:shardingJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@65e05005[class com.inspur.executor.handler.SampleXxlJob#shardingJobHandler]
+2020-08-31 16:17:32.194 [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:commandJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@6ed691fd[class com.inspur.executor.handler.SampleXxlJob#commandJobHandler]
+2020-08-31 16:17:32.468 [main] INFO  o.s.integration.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-08-31 16:17:32.469 [main] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application.errorChannel' has 1 subscriber(s).
+2020-08-31 16:17:32.469 [main] INFO  o.s.integration.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+2020-08-31 16:17:32.470 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2020-08-31 16:17:32.626 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path '/JwtVue'
+2020-08-31 16:17:32.721 [main] INFO  com.inspur.VueAppApplication - Started VueAppApplication in 21.814 seconds (JVM running for 25.807)
+2020-08-31 16:17:35.274 [Thread-234] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
+2020-08-31 16:17:50.203 [xxl-rpc, EmbedServer bizThreadPool-1988478405] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:5, handler:com.xxl.job.core.handler.impl.MethodJobHandler@3578a45b[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-08-31 16:18:10.372 [SpringContextShutdownHook] INFO  o.s.integration.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-08-31 16:18:10.372 [SpringContextShutdownHook] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application.errorChannel' has 0 subscriber(s).
+2020-08-31 16:18:10.373 [SpringContextShutdownHook] INFO  o.s.integration.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+2020-08-31 16:18:10.374 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2020-08-31 16:18:10.376 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-31 16:18:10.378 [Thread-234] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server stop.
+2020-08-31 16:18:10.395 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.30.3:9999/'}, registryResult:ReturnT [code=200, msg=null, content=null]
+2020-08-31 16:18:10.395 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job, executor registry thread destory.
+2020-08-31 16:18:10.396 [SpringContextShutdownHook] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server destroy success.
+2020-08-31 16:18:10.403 [Thread-242] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-242,10,main]
+2020-08-31 16:18:10.403 [xxl-job, executor JobLogFileCleanThread] INFO  com.xxl.job.core.thread.JobLogFileCleanThread - >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destory.
+2020-08-31 16:18:10.416 [xxl-job, executor TriggerCallbackThread] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor callback thread destory.
+2020-08-31 16:18:10.417 [Thread-233] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor retry callback thread destory.
+2020-08-31 16:18:36.147 [main] INFO  com.inspur.VueAppApplication - Starting VueAppApplication on zhuanghuan00 with PID 26172 (E:\IDEA_PROJECT\zh-vue\vue-app\target\classes started by zhuanghuan in E:\IDEA_PROJECT\zh-vue)
+2020-08-31 16:18:36.164 [main] INFO  com.inspur.VueAppApplication - No active profile set, falling back to default profiles: default
+2020-08-31 16:18:39.574 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-08-31 16:18:39.585 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-08-31 16:18:39.683 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 71ms. Found 0 Redis repository interfaces.
+2020-08-31 16:18:41.253 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-08-31 16:18:41.274 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2020-08-31 16:18:41.287 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-08-31 16:18:41.644 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfiguration' of type [com.inspur.system.redis.config.RedisConfiguration$$EnhancerBySpringCGLIB$$b9e63347] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 16:18:41.819 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 16:18:41.852 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 16:18:41.860 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 16:18:42.760 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2020-08-31 16:18:42.795 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2020-08-31 16:18:42.800 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-31 16:18:42.800 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-08-31 16:18:43.066 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring embedded WebApplicationContext
+2020-08-31 16:18:43.067 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6112 ms
+2020-08-31 16:18:46.543 [main] INFO  com.inspur.executor.config.XxlJobConfig - >>>>>>>>>>> xxl-job config init.
+2020-08-31 16:18:46.932 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2020-08-31 16:18:47.069 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16c5b50a, org.springframework.security.web.context.SecurityContextPersistenceFilter@40f9f60d, org.springframework.security.web.header.HeaderWriterFilter@1124910c, org.springframework.security.web.authentication.logout.LogoutFilter@176333ee, com.inspur.system.security.filter.JwtLoginAuthenticationFilter@773eca84, com.inspur.system.security.filter.JwtRequestAuthorizationFilter@448cdb47, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@628ba266, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7c4d1c7b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f8659d0, org.springframework.security.web.session.SessionManagementFilter@4a9869a8, org.springframework.security.web.access.ExceptionTranslationFilter@7fd751de, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6d8b7ea9]
+2020-08-31 16:18:47.373 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-31 16:18:48.920 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-08-31 16:18:49.047 [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@1f6f0fe2[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-08-31 16:18:49.049 [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler2, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@22604c7e[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler2]
+2020-08-31 16:18:49.049 [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@4d8f2cfd[class com.inspur.executor.handler.SampleXxlJob#httpJobHandler]
+2020-08-31 16:18:49.053 [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:commandJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@6d4502ca[class com.inspur.executor.handler.SampleXxlJob#commandJobHandler]
+2020-08-31 16:18:49.054 [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:shardingJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@ab2009f[class com.inspur.executor.handler.SampleXxlJob#shardingJobHandler]
+2020-08-31 16:18:49.275 [main] INFO  o.s.integration.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-08-31 16:18:49.276 [main] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application.errorChannel' has 1 subscriber(s).
+2020-08-31 16:18:49.276 [main] INFO  o.s.integration.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+2020-08-31 16:18:49.276 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2020-08-31 16:18:50.714 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path '/JwtVue'
+2020-08-31 16:18:50.763 [main] INFO  com.inspur.VueAppApplication - Started VueAppApplication in 19.348 seconds (JVM running for 23.107)
+2020-08-31 16:18:52.606 [Thread-220] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
+2020-08-31 16:19:18.920 [http-nio-8085-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-31 16:19:18.920 [http-nio-8085-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-31 16:19:18.939 [http-nio-8085-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 18 ms
+2020-08-31 16:19:20.639 [http-nio-8085-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-08-31 16:19:21.564 [http-nio-8085-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-08-31 16:19:30.144 [xxl-rpc, EmbedServer bizThreadPool-1348310201] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:5, handler:com.xxl.job.core.handler.impl.MethodJobHandler@1f6f0fe2[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-08-31 16:20:04.714 [SpringContextShutdownHook] INFO  o.s.integration.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-08-31 16:20:04.715 [SpringContextShutdownHook] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application.errorChannel' has 0 subscriber(s).
+2020-08-31 16:20:04.716 [SpringContextShutdownHook] INFO  o.s.integration.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+2020-08-31 16:20:04.717 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2020-08-31 16:20:04.721 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-31 16:20:04.721 [Thread-220] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server stop.
+2020-08-31 16:20:04.740 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.30.3:9999/'}, registryResult:ReturnT [code=200, msg=null, content=null]
+2020-08-31 16:20:04.741 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job, executor registry thread destory.
+2020-08-31 16:20:04.743 [SpringContextShutdownHook] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server destroy success.
+2020-08-31 16:20:04.752 [Thread-228] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-228,10,main]
+2020-08-31 16:20:04.753 [xxl-job, executor JobLogFileCleanThread] INFO  com.xxl.job.core.thread.JobLogFileCleanThread - >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destory.
+2020-08-31 16:20:04.769 [xxl-job, executor TriggerCallbackThread] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor callback thread destory.
+2020-08-31 16:20:04.771 [Thread-219] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor retry callback thread destory.
+2020-08-31 16:20:04.904 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-08-31 16:20:04.937 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-08-31 16:20:16.536 [main] INFO  com.inspur.VueAppApplication - Starting VueAppApplication on zhuanghuan00 with PID 38752 (E:\IDEA_PROJECT\zh-vue\vue-app\target\classes started by zhuanghuan in E:\IDEA_PROJECT\zh-vue)
+2020-08-31 16:20:16.555 [main] INFO  com.inspur.VueAppApplication - No active profile set, falling back to default profiles: default
+2020-08-31 16:20:20.201 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-08-31 16:20:20.209 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-08-31 16:20:20.318 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77ms. Found 0 Redis repository interfaces.
+2020-08-31 16:20:20.990 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-08-31 16:20:21.014 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2020-08-31 16:20:21.023 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-08-31 16:20:21.303 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfiguration' of type [com.inspur.system.redis.config.RedisConfiguration$$EnhancerBySpringCGLIB$$831e5e1e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 16:20:21.395 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 16:20:21.424 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 16:20:21.432 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 16:20:22.224 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2020-08-31 16:20:22.248 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2020-08-31 16:20:22.250 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-31 16:20:22.251 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-08-31 16:20:22.513 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring embedded WebApplicationContext
+2020-08-31 16:20:22.514 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5348 ms
+2020-08-31 16:20:25.437 [main] INFO  com.inspur.executor.config.XxlJobConfig - >>>>>>>>>>> xxl-job config init.
+2020-08-31 16:20:25.707 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2020-08-31 16:20:25.797 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6ba060af, org.springframework.security.web.context.SecurityContextPersistenceFilter@3cd46491, org.springframework.security.web.header.HeaderWriterFilter@754de353, org.springframework.security.web.authentication.logout.LogoutFilter@54b44879, com.inspur.system.security.filter.JwtLoginAuthenticationFilter@2f4d01b6, com.inspur.system.security.filter.JwtRequestAuthorizationFilter@38de5daf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@349312d5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@149d7cc6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5817f1ca, org.springframework.security.web.session.SessionManagementFilter@58b97c15, org.springframework.security.web.access.ExceptionTranslationFilter@1f39269d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6003220a]
+2020-08-31 16:20:26.101 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-31 16:20:27.224 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-08-31 16:20:27.309 [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:commandJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@7976e536[class com.inspur.executor.handler.SampleXxlJob#commandJobHandler]
+2020-08-31 16:20:27.309 [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:shardingJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@670a4738[class com.inspur.executor.handler.SampleXxlJob#shardingJobHandler]
+2020-08-31 16:20:27.310 [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@47ffdbba[class com.inspur.executor.handler.SampleXxlJob#httpJobHandler]
+2020-08-31 16:20:27.310 [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@ba0018e[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-08-31 16:20:27.310 [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler2, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@45311a99[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler2]
+2020-08-31 16:20:27.472 [main] INFO  o.s.integration.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-08-31 16:20:27.474 [main] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application.errorChannel' has 1 subscriber(s).
+2020-08-31 16:20:27.474 [main] INFO  o.s.integration.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+2020-08-31 16:20:27.476 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2020-08-31 16:20:27.700 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path '/JwtVue'
+2020-08-31 16:20:27.745 [main] INFO  com.inspur.VueAppApplication - Started VueAppApplication in 12.862 seconds (JVM running for 16.239)
+2020-08-31 16:20:29.184 [Thread-223] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
+2020-08-31 16:21:00.195 [xxl-rpc, EmbedServer bizThreadPool-1606375326] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:5, handler:com.xxl.job.core.handler.impl.MethodJobHandler@ba0018e[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-08-31 16:21:09.848 [http-nio-8085-exec-10] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-31 16:21:09.850 [http-nio-8085-exec-10] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-31 16:21:09.873 [http-nio-8085-exec-10] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 17 ms
+2020-08-31 16:21:11.357 [http-nio-8085-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-08-31 16:21:11.869 [http-nio-8085-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-08-31 16:21:42.538 [SpringContextShutdownHook] INFO  o.s.integration.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-08-31 16:21:42.539 [SpringContextShutdownHook] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application.errorChannel' has 0 subscriber(s).
+2020-08-31 16:21:42.540 [SpringContextShutdownHook] INFO  o.s.integration.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+2020-08-31 16:21:42.540 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2020-08-31 16:21:42.543 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-31 16:21:42.543 [Thread-223] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server stop.
+2020-08-31 16:21:42.568 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.30.3:9999/'}, registryResult:ReturnT [code=200, msg=null, content=null]
+2020-08-31 16:21:42.569 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job, executor registry thread destory.
+2020-08-31 16:21:42.569 [SpringContextShutdownHook] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server destroy success.
+2020-08-31 16:21:42.574 [Thread-231] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-231,10,main]
+2020-08-31 16:21:42.575 [xxl-job, executor JobLogFileCleanThread] INFO  com.xxl.job.core.thread.JobLogFileCleanThread - >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destory.
+2020-08-31 16:21:42.592 [xxl-job, executor TriggerCallbackThread] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor callback thread destory.
+2020-08-31 16:21:42.592 [Thread-222] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor retry callback thread destory.
+2020-08-31 16:21:42.718 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-08-31 16:21:42.761 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-08-31 16:21:57.592 [main] INFO  com.inspur.VueAppApplication - Starting VueAppApplication on zhuanghuan00 with PID 34348 (E:\IDEA_PROJECT\zh-vue\vue-app\target\classes started by zhuanghuan in E:\IDEA_PROJECT\zh-vue)
+2020-08-31 16:21:57.601 [main] INFO  com.inspur.VueAppApplication - No active profile set, falling back to default profiles: default
+2020-08-31 16:21:59.714 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-08-31 16:21:59.725 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-08-31 16:21:59.829 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76ms. Found 0 Redis repository interfaces.
+2020-08-31 16:22:00.684 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-08-31 16:22:00.705 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2020-08-31 16:22:00.715 [main] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-08-31 16:22:01.001 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfiguration' of type [com.inspur.system.redis.config.RedisConfiguration$$EnhancerBySpringCGLIB$$b8b1dd73] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 16:22:01.074 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 16:22:01.098 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 16:22:01.101 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-31 16:22:01.710 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2020-08-31 16:22:01.725 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+2020-08-31 16:22:01.727 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-08-31 16:22:01.729 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-08-31 16:22:01.980 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring embedded WebApplicationContext
+2020-08-31 16:22:01.981 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3830 ms
+2020-08-31 16:22:03.980 [main] INFO  com.inspur.executor.config.XxlJobConfig - >>>>>>>>>>> xxl-job config init.
+2020-08-31 16:22:04.191 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/resources/**'], []
+2020-08-31 16:22:04.266 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6704df84, org.springframework.security.web.context.SecurityContextPersistenceFilter@59262a90, org.springframework.security.web.header.HeaderWriterFilter@dc1fadd, org.springframework.security.web.authentication.logout.LogoutFilter@d108406, com.inspur.system.security.filter.JwtLoginAuthenticationFilter@2484dbb7, com.inspur.system.security.filter.JwtRequestAuthorizationFilter@7f4a1cac, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2755617b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25214797, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1412682c, org.springframework.security.web.session.SessionManagementFilter@baa9ce4, org.springframework.security.web.access.ExceptionTranslationFilter@23e2c1ca, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3dea226b]
+2020-08-31 16:22:04.603 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-31 16:22:05.743 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2020-08-31 16:22:05.841 [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@24fef542[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-08-31 16:22:05.842 [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@44ddb518[class com.inspur.executor.handler.SampleXxlJob#httpJobHandler]
+2020-08-31 16:22:05.842 [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler2, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@e36bc01[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler2]
+2020-08-31 16:22:05.843 [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:commandJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@6654ca0d[class com.inspur.executor.handler.SampleXxlJob#commandJobHandler]
+2020-08-31 16:22:05.843 [main] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:shardingJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@35536760[class com.inspur.executor.handler.SampleXxlJob#shardingJobHandler]
+2020-08-31 16:22:06.020 [main] INFO  o.s.integration.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-08-31 16:22:06.021 [main] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application.errorChannel' has 1 subscriber(s).
+2020-08-31 16:22:06.021 [main] INFO  o.s.integration.endpoint.EventDrivenConsumer - started bean '_org.springframework.integration.errorLogger'
+2020-08-31 16:22:06.022 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+2020-08-31 16:22:06.076 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path '/JwtVue'
+2020-08-31 16:22:06.109 [main] INFO  com.inspur.VueAppApplication - Started VueAppApplication in 11.273 seconds (JVM running for 13.859)
+2020-08-31 16:22:08.104 [Thread-229] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
+2020-08-31 16:22:17.562 [http-nio-8085-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/JwtVue] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-31 16:22:17.562 [http-nio-8085-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-08-31 16:22:17.587 [http-nio-8085-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 25 ms
+2020-08-31 16:22:18.712 [http-nio-8085-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-08-31 16:22:19.020 [http-nio-8085-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-08-31 16:22:30.137 [xxl-rpc, EmbedServer bizThreadPool-824152421] INFO  com.xxl.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:5, handler:com.xxl.job.core.handler.impl.MethodJobHandler@24fef542[class com.inspur.executor.handler.SampleXxlJob#demoJobHandler]
+2020-08-31 16:34:52.955 [SpringContextShutdownHook] INFO  o.s.integration.endpoint.EventDrivenConsumer - Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-08-31 16:34:52.956 [SpringContextShutdownHook] INFO  o.s.integration.channel.PublishSubscribeChannel - Channel 'application.errorChannel' has 0 subscriber(s).
+2020-08-31 16:34:52.960 [SpringContextShutdownHook] INFO  o.s.integration.endpoint.EventDrivenConsumer - stopped bean '_org.springframework.integration.errorLogger'
+2020-08-31 16:34:52.962 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2020-08-31 16:34:52.964 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-31 16:34:52.965 [Thread-229] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server stop.
+2020-08-31 16:34:53.021 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://192.168.30.3:9999/'}, registryResult:ReturnT [code=200, msg=null, content=null]
+2020-08-31 16:34:53.022 [xxl-job, executor ExecutorRegistryThread] INFO  com.xxl.job.core.thread.ExecutorRegistryThread - >>>>>>>>>>> xxl-job, executor registry thread destory.
+2020-08-31 16:34:53.022 [SpringContextShutdownHook] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server destroy success.
+2020-08-31 16:34:53.032 [Thread-236] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-236,10,main]
+2020-08-31 16:34:53.033 [xxl-job, executor JobLogFileCleanThread] INFO  com.xxl.job.core.thread.JobLogFileCleanThread - >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destory.
+2020-08-31 16:34:53.318 [xxl-job, executor TriggerCallbackThread] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor callback thread destory.
+2020-08-31 16:34:53.320 [Thread-228] INFO  com.xxl.job.core.thread.TriggerCallbackThread - >>>>>>>>>>> xxl-job, executor retry callback thread destory.
+2020-08-31 16:34:53.452 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-08-31 16:34:53.481 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

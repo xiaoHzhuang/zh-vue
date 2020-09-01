@@ -53,13 +53,13 @@ public class SupplierServiceImpl implements ISupplierService {
     }
 
     @Override
-    @Cacheable
+    @Cacheable(key="#id")
     public Supplier getSupplierById(String id) {
         return supplierMapper.getSupplierById(id);
     }
 
     @Override
-    @CacheEvict
+    @CacheEvict(key="#id")
     public void deleteSupplierById(String id) {
         supplierMapper.deleteSupplierById(id);
     }

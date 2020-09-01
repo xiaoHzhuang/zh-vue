@@ -10,6 +10,10 @@ import com.inspur.goods.DO.GoodsQueryModel;
 import com.inspur.goods.dao.GoodsMapper;
 import com.inspur.goods.service.IGoodsService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheConfig;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -23,16 +27,18 @@ import java.util.UUID;
  * Description:
  */
 @Service
+@CacheConfig(cacheNames = "goods")
 public class GoodsServiceImpl implements IGoodsService {
     @Autowired
     private GoodsMapper goodsMapper;
 
     @Override
+    @CachePut(key = "#goods.id")
     public void save(Goods goods) {
-        if(goods.getId()==null || goods.getId().equals("")){
+        if (goods.getId() == null || goods.getId().equals("")) {
             goods.setId(UUID.randomUUID().toString());
             goodsMapper.insertSelective(goods);
-        }else{
+        } else {
             goodsMapper.update(goods);
         }
     }
@@ -42,16 +48,18 @@ public class GoodsServiceImpl implements IGoodsService {
         int pageNum = pageRequest.getPageNum();
         int pageSize = pageRequest.getPageSize();
         PageHelper.startPage(pageNum, pageSize);
-        List<Goods> goodsList =goodsMapper.listGoods(goodsQueryModel);
-        return PageUtils.getPageResult(pageRequest,new PageInfo<Goods>(goodsList));
+        List<Goods> goodsList = goodsMapper.listGoods(goodsQueryModel);
+        return PageUtils.getPageResult(pageRequest, new PageInfo<Goods>(goodsList));
     }
 
     @Override
+    @CacheEvict(key = "#id")
     public void deleteById(String id) {
         goodsMapper.deleteById(id);
     }
 
     @Override
+    @Cacheable(key = "#id")
     public Goods getById(String id) {
         return goodsMapper.getById(id);
     }
