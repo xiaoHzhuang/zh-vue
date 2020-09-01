@@ -2,7 +2,10 @@ package com.inspur.goods.DO;
 
 import com.inspur.supplier.DO.Supplier;
 
-public class Goods {
+import java.io.Serializable;
+
+public class Goods implements Serializable {
+    private static final long serialVersionUID = 1L;
     private String id;
 
     private String goodsName;

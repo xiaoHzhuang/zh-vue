@@ -1,5 +1,6 @@
 package com.inspur.member.DO;
 
+import java.io.Serializable;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -11,7 +12,8 @@ import java.util.Date;
  * Date: 2020/2/11   8:49
  * Description:
  */
-public class Member {
+public class Member  implements Serializable {
+    private static final long serialVersionUID = 1L;
     private String id;
     private String memberName;
     private String memberPhone;
