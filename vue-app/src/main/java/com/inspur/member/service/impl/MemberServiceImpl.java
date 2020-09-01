@@ -10,6 +10,10 @@ import com.inspur.member.DO.MemberQueryModel;
 import com.inspur.member.dao.MemberMapper;
 import com.inspur.member.service.IMemberService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheConfig;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -23,6 +27,7 @@ import java.util.UUID;
  * Description:
  */
 @Service
+@CacheConfig(cacheNames = "member")
 public class MemberServiceImpl implements IMemberService {
 
     @Autowired
@@ -31,15 +36,16 @@ public class MemberServiceImpl implements IMemberService {
 
     @Override
     public PageResult search(PageRequest pageRequest, MemberQueryModel memberQueryModel) {
-        return PageUtils.getPageResult(pageRequest, getPageInfo(pageRequest,memberQueryModel));
+        return PageUtils.getPageResult(pageRequest, getPageInfo(pageRequest, memberQueryModel));
     }
 
     @Override
+    @CachePut(key = "#member.id")
     public void save(Member member) {
-        if(member.getId()!=null){
+        if (member.getId() != null) {
             memberMapper.update(member);
-        }else{
-            String id= UUID.randomUUID().toString();
+        } else {
+            String id = UUID.randomUUID().toString();
             member.setId(id);
             memberMapper.save(member);
         }
@@ -47,17 +53,20 @@ public class MemberServiceImpl implements IMemberService {
     }
 
     @Override
+    @Cacheable(key = "#id")
     public Member getMemberById(String id) {
         return memberMapper.getMemberById(id);
     }
 
     @Override
+    @CacheEvict(key = "#id")
     public void deleteMemberById(String id) {
         memberMapper.deleteMemberById(id);
     }
 
     /**
      * 调用分页插件完成分页
+     *
      * @param pageRequest
      * @return
      */

@@ -120,7 +120,7 @@ public class RedisConfiguration extends CachingConfigurerSupport {
                 .builder(connectionFactory)
                 .cacheDefaults(
                         RedisCacheConfiguration.defaultCacheConfig()
-                                .entryTtl(Duration.ofSeconds(20))) //缓存时间绝对过期时间20s
+                                .entryTtl(Duration.ofSeconds(200))) //缓存时间绝对过期时间20s
                 .transactionAware()
                 .build();
     }
